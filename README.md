@@ -4,7 +4,7 @@
 En attente de créer la bdd sur le serveur de l'école avant d'ajouter le gitignore pour la config serveur et autres.
 
 --------
-Cloner le repo :
+Cloner le repo (moi je l'ai dans C:\wamp64\www\WordpressWDS) :
 --------
 * git clone --recursive https://github.com/EquipeK/WordpressWDS.git
 
