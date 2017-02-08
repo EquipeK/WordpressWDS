@@ -14,7 +14,7 @@
  * @package WordPress
  */
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpressWDS/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']. '/wordpressWDS/wordpress');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']. '/wordpressWDS');
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wordpressWDS/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpressWDS/wp-content');
 define('WP_DEFAULT_THEME', 'treeson');
