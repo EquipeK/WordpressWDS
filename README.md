@@ -26,3 +26,8 @@ Mettre à jour WordPress :
 * cd wordpress
 * git fetch --tags
 * git checkout x.x.x
+
+--------
+
+Avant de commencer faites un npm install dans le dossier du theme.
+Ensuite simplement faire un gulp watch pour auto compiler le js/sass
