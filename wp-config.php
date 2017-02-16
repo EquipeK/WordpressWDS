@@ -13,11 +13,11 @@
  *
  * @package WordPress
  */
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpressWDS/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']. '/wordpressWDS');
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wordpressWDS/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpressWDS/wp-content');
-define('WP_DEFAULT_THEME', 'treeson');
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/WordpressWDS/wordpress');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']. '/WordpressWDS');
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/WordpressWDS/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/WordpressWDS/wp-content');
+define('WP_DEFAULT_THEME', 'wds');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'wp_wds');
