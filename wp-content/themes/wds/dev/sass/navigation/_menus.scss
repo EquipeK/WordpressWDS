@@ -115,9 +115,21 @@
 }
 
 .menu {
-  border: 1px solid #fff;
-  width: 900px;
+  border:none;
   display: flex;
+  width: 900px;
   justify-content: space-between;
 }
 
+.signup {
+  margin-left: auto;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}

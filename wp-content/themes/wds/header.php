@@ -26,12 +26,15 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class='menu-container'>
 			<div class='menu'>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wds' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				<div class='date'>Aug 14, 2016</div>
+				<div class='signup'>Sign Up</div>
+				<div class='login'>Login</div>
 			</div>
 		</div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wds' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
 		<!--<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
