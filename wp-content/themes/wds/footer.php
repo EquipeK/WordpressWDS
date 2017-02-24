@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wds' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'wds' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'wds' ), 'wds', '<a href="https://automattic.com/" rel="designer">WDS Students</a>' ); ?>
+			<div class='footer-item footer-one'></div>
+            <div class='footer-item footer-two'></div>
+            <div class='footer-item footer-three'></div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
