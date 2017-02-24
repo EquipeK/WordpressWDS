@@ -13,46 +13,31 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<div class='header-container'>
-        <div class='header'>
-            <div class='subscribe'>Test &#9662;</div>
-            <div class='logo'><img src="<?php echo(get_template_directory_uri());?>/dist/images/awesome-logo.svg"/></div>
-            <div class='social'><img src='<?php echo(get_template_directory_uri());?>/dist/images/social-icons.svg'/></div>
-        </div>
-    </div>
-
-	<div class='photo-grid-container'>
-        <div class='photo-grid'>
-            <div class='photo-grid-item'>
-            <img src='<?php echo(get_template_directory_uri());?>/dist/images/one.svg'/>
-            </div>
-            <div class='photo-grid-item'>
-            <img src='<?php echo(get_template_directory_uri());?>/dist/images/two.svg'/>
-            </div>
-            <div class='photo-grid-item'>
-            <img src='<?php echo(get_template_directory_uri());?>/dist/images/three.svg'/>
-            </div>
-            <div class='photo-grid-item'>
-            <img src='<?php echo(get_template_directory_uri());?>/dist/images/four.svg'/>
-            </div>
-            <div class='photo-grid-item'>
-            <img src='<?php echo(get_template_directory_uri());?>/dist/images/five.svg'/>
+            <div class='header'>
+                <div class='subscribe'>Test &#9662;</div>
+                <div class='logo'><img src="<?php echo(get_template_directory_uri());?>/dist/images/awesome-logo.svg"/></div>
+                <div class='social'><img src='<?php echo(get_template_directory_uri());?>/dist/images/social-icons.svg'/></div>
             </div>
         </div>
-    </div>
-		<?php
-		/*if ( have_posts() ) :
-			
-			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', get_post_format() );
+        <div class='photo-grid-container'>
+            <div class='photo-grid'>
+                <?php
+                if ( have_posts() ) :
+                    
+                    while ( have_posts() ) : the_post();?>
+                        <div class='photo-grid-item'>
+                        <?php get_template_part( 'template-parts/content', 'front' );?>
+                        </div>
+                        <?php
+                    endwhile;
+                else :
 
-			endwhile;
-		else :
+                    get_template_part( 'template-parts/content', 'none' );
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;*/ ?>
-
+                endif;?>
+            </div>
+        </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
