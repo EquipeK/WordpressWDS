@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var nano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
+var livereload = require('gulp-livereload');
 
 
 gulp.task('scripts', function () {
@@ -12,7 +13,8 @@ gulp.task('scripts', function () {
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('js'))
+    .pipe(livereload());
 });
 
 gulp.task('sass', function () {
@@ -20,18 +22,20 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(nano())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./'))
+    .pipe(livereload());
 });
  
 gulp.task('images', function () {
     gulp.src('dev/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images'));
 });
 
 // Run everything
 gulp.task('watch',function()
 {
+    livereload.listen();
     gulp.watch('dev/js/*.js', ['scripts']);
     gulp.watch('dev/sass/**/*.scss', ['sass']);
     gulp.watch('dev/images/*', ['images']);
