@@ -16,13 +16,19 @@
 
 	<div class="entry-content">
 		<?php
-			the_content();
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wds' ),
-				'after'  => '</div>',
-			) );
+			$the_slug = 'developpement-web-et-logiciel';
+			$args = array(
+			'name'           => $the_slug,
+			'post_type'      => 'post',
+			'post_status'    => 'publish',
+			'posts_per_page' => 1
+			);
+			$my_posts = get_posts( $args );
 		?>
+		<h2><?= $my_posts[0]->post_title ?></h2>
+		<p>
+			<?= $my_posts[0]->post_content ?>
+		</p>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
