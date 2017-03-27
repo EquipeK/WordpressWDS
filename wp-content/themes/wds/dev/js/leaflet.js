@@ -1,7 +1,8 @@
-jQuery(document).ready(function(){
+$(function()
+{
   $("#link").click(function(e){
     e.preventDefault();
     console.log(e);
   })
-})
+});
 // console.log("ehello");
