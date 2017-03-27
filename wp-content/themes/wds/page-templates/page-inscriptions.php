@@ -3,7 +3,6 @@
 
 <?php get_header(); ?>
 <style>
-/* some basic styling to make things pretty */
 *, *:before, *:after {
   box-sizing: border-box;
     padding: 0;
