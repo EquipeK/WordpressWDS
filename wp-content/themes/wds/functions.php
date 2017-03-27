@@ -106,8 +106,12 @@ add_action( 'widgets_init', 'wds_widgets_init' );
  */
 function wds_scripts() {
 	wp_enqueue_style( 'wds-style', get_stylesheet_uri() );
+	wp_deregister_script( 'jquery' );
+	wp_register_script('jquery',get_template_directory_uri() . '/dist/js/jquery-3.2.0.min.js');
 
-	wp_enqueue_script( 'wds-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'wds-scripts', get_template_directory_uri() . '/js/scripts.min.js', array('jquery'), '20151215', true );
+
+	wp_register_script('leaflet',get_template_directory_uri() . '/dev/js/leaflet.js', array('jquery'));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

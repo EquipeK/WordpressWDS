@@ -1,2 +1,6 @@
 node_modules/
 debug.log
+.DS_Store
+dist/.DS_Store
+wp-content/.DS_Store
+wp-content/themes/.DS_Store

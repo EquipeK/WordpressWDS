@@ -16,7 +16,7 @@
 
 	<div class="entry-content">
 		<?php
-			$the_slug = 'developpement-web-et-logiciel';
+			$the_slug = 'developpement-webmobile';
 			$args = array(
 			'name'           => $the_slug,
 			'post_type'      => 'post',
