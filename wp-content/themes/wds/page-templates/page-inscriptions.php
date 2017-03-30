@@ -92,41 +92,115 @@ input:checked ~ label {
 			<section>
 				<div class="container" id="page-content">
                     <form action="get">
-                    <fieldset>
-                        <legend>Your skillset</legend>
-                        
-                        <div>
-                        <input id="name" name="name" type="text" />
-                        <label for="name">name</label>
-                        </div>
-                        
-                        <div>
-                        <select id="experience" name="experience">
-                            <option value="1">1 year or less</option>
-                            <option value="2">2 years</option>
-                            <option value="3">3 - 4 years</option>
-                            <option value="5">5 years or more</option>
-                        </select>
-                        <label for="experience">experience</label>
-                        </div>
-                        
-                        <div>
-                        <input id="html" name="html" type="checkbox" />
-                        <label for="html">HTML</label>
-                        </div>
-                        
-                        <div>
-                        <input id="css" name="css" type="checkbox" />
-                        <label for="css">CSS</label>
-                        </div>
-                        
-                        <div>
-                        <input id="javascript" name="javascript" type="checkbox" />
-                        <label for="javascript">JavaScript</label>
-                        </div>
-                        
+                      <fieldset>
+                          <legend>Vos Infos</legend>
+                          
+                          <div>
+                          <input id="name" name="name" type="text" />
+                          <label for="name">Nom</label>
+                          </div>
+                          <div>
+                          <input id="prenom" name="prenom" type="text" />
+                          <label for="prenom">Prénom</label>
+                          </div>
+
+                          <div>
+                          <input id="birth" name="birth" type="date" />
+                          <label for="birth">Date de Naissance</label>
+                          </div>
+
+                          <div>
+                          <input id="tel" name="tel" type="tel" />
+                          <label for="tel">Téléphone</label>
+                          </div>
+
+                          <div>
+                          <input id="email" name="email" type="email" />
+                          <label for="email">Email</label>
+                          </div>
+
+                          <div>
+                          <select id="class" name="class">
+                              <option value="Bac +2 : Chargé Marketing Digital (Bac+2 en 1 an)">Bac +2 : Chargé Marketing Digital (Bac+2 en 1 an)</option>
+                              <option value="Mastere Systeme Reseau (Bac+3/4 en 2 ans)">Mastère Système & Réseau (Bac+3/4 en 2 ans)</option>
+                              <option value="Mastere Design Graphique (Bac+3/4 en 2 ans)">Mastère Design Graphique (Bac+3/4 en 2 ans)</option>
+                              <option value="Mastere Developpement (Bac+3/4 en 2 ans)">Mastère Développement (Bac+3/4 en 2 ans)</option>
+                              <option value="Mastere IT Manager (Bac+5 en 1 an)">Mastère IT Manager (Bac+5 en 1 an)</option>
+                          </select>
+                          <label for="class">Choix de filière</label>
+                          </div>
                     </fieldset>
-                    </form>
+                    <fieldset>
+                        <legend>Dernière formation</legend>
+                        <div>
+                          <input type="number" name="year" value="" id="year">
+                          <label for="year">Année</label>
+                        </div>
+                        <div>
+                          <input type="text" name="etablissement" value="" id="etablissement">
+                          <label for="etablissement">Etablissement</label>
+                        </div>
+                        <div>
+                          <input type="text" name="formation" value="" id="formation">
+                          <label for="formation">Formation</label>
+                        </div>
+                        <div>
+                          <input id="obtention" name="obtention" type="checkbox" />
+                          <label for="obtention">Obtention</label>
+                        </div>
+                    </fieldset>  
+
+                    <fieldset>
+                        <legend>Dernière expérience</legend>
+                        <div>
+                          <input type="text" name="statut" value="" id="statut">
+                          <label for="statut">Statut</label>
+                        </div>
+                        <div>
+                          <input id="experienceDate" name="experienceDate" type="date" />
+                          <label for="experienceDate">Date Début</label>
+                        </div>
+                        <div>
+                          <input type="text" name="entreprise" value="" id="entreprise">
+                          <label for="entreprise">Entreprise</label>
+                        </div>
+                        <div>
+                          <input type="text" name="poste" value="" id="poste">
+                          <label for="poste">Poste</label>
+                        </div>
+                        <div>
+                          <input type="number" name="experienceDuree" value="" id="experienceDuree">
+                          <label for="experienceDuree">Durée</label>
+                        </div>
+                    </fieldset> 
+
+                    <fieldset>
+                        <legend>Comment avez-vous connu la WDS ?</legend>
+                          <div>
+                          <input id="internet" name="internet" type="checkbox" />
+                          <label for="internet">Internet</label>
+                          </div>
+                          
+                          <div>
+                          <input id="Presse" name="Presse" type="checkbox" />
+                          <label for="Presse">Presse</label>
+                          </div>
+                          
+                          <div>
+                          <input id="Connaissances" name="Connaissances" type="checkbox" />
+                          <label for="Connaissances">Connaissances</label>
+                          </div>
+
+                          <div>
+                          <input id="Autre" name="Autre" type="checkbox" />
+                          <label for="Autre">Autre</label>
+                          <input id="Autre" name="Autre" type="text" />
+                          </div>
+                    </fieldset>
+                    <div>
+                      Captcha
+                    </div>
+                </form>
 				</div>
 
 			</section>
