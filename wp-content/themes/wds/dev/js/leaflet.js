@@ -1,8 +1,8 @@
 $(function()
 {
-  $("#link").click(function(e){
+  $("#form_email_leaflet").hide();
+  $("#link").on('click', function(e){
     e.preventDefault();
-    console.log(e);
-  })
+    $("#form_email_leaflet").toggle();
+  });
 });
-// console.log("ehello");
