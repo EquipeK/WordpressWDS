@@ -197,8 +197,10 @@ input:checked ~ label {
                           <input id="Autre" name="Autre" type="text" />
                           </div>
                     </fieldset>
+                    <input type="submit" name="submit" value="submit">
                     <div>
                       Captcha
+                      Upload cv
                     </div>
                 </form>
 				</div>
