@@ -18,24 +18,46 @@
 
 <?php wp_head(); ?>
 </head>
+<style>
+	.home{
+	}
+	.img_header{
+		z-index:0;
+	}
+	.logo{
+		width: 15%;
+		height: 100%;
+	}
+	.menu_custom{
+		position: absolute;
+		top: 0;
+		margin-top: 1%;
+		width:100%
+	}
+	.menu_item{
+		width:100%;
+		list-style:none;
+		display:inline;
+	}
+	.menu_navigation{
 
+	}
+</style>
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wds' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class='menu-container'>
-			<div class='menu'>
-				<div class='date'>Aug 14, 2016</div>
-				<div class='signup'>Sign Up</div>
+<div id="page home" class="site home">
+	<img class="img_header" src="<?php echo get_template_directory_uri()?>/dev/images/header_img.png"/>
+	<!--<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wds' ); ?></a>-->
+	<header role="banner">
+		<div class='menu_custom'>
+			<img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-hd-blanc.png"/>
+			<div class='menu_navigation'>
+				<span><?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'menu_item' ) ); ?></span>
 				<div class='login'>Login</div>
 			</div>
 		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wds' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		<!--<div class="site-branding">
+		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -49,7 +71,7 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div> .site-branding -->
+		</div>
 
 		
 	</header><!-- #masthead -->
