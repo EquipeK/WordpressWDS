@@ -33,15 +33,25 @@
 		position: absolute;
 		top: 0;
 		margin-top: 1%;
-		width:100%
+		width:100%;
+		display:inline;
 	}
 	.menu_item{
 		width:100%;
 		list-style:none;
 		display:inline;
 	}
+	.menu_item > ul{
+		display:inline;
+	}
+	.menu_item > ul > li{
+		display:inline-block;
+	}
 	.menu_navigation{
-
+		display:inline;
+		float:right;
+		margin-top:30px;
+		margin-right:30px;
 	}
 </style>
 <body <?php body_class(); ?>>
@@ -52,8 +62,8 @@
 		<div class='menu_custom'>
 			<img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-hd-blanc.png"/>
 			<div class='menu_navigation'>
-				<span><?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'menu_item' ) ); ?></span>
-				<div class='login'>Login</div>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'menu_item' ) ); ?>
+				<span class='login'>Login</span>
 			</div>
 		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
