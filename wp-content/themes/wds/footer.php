@@ -15,9 +15,29 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<div class='footer-item footer-one'></div>
-            <div class='footer-item footer-two'></div>
-            <div class='footer-item footer-three'></div>
+			<div class='footer-item footer-one'>
+				
+			</div>
+            <div class='footer-item footer-two'>
+				<div class='footer-item'>
+					<div class='footer-item' id="icon_footer">
+						icon
+					</div>
+					<div class='footer-item'>
+						297 rue Eugène Berest </br>
+						29200 BREST
+					</div>
+				</div>
+				<div class='footer-item'>
+					<a href="#">Mentions Légales</a>
+				</div>
+				<div class='footer-item'>
+					<a href="#">Plan du site</a>
+				</div>	
+			</div>
+            <div class='footer-item footer-three'>
+
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
