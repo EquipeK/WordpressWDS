@@ -17,7 +17,7 @@ get_header(); ?>
         
     </div>
 
-	<div id="primary" class="content-area">
+	<div id="front_primary" class="content-area" style="height:730px;">
 		<main id="main" class="site-main" role="main">
 
         <div class='photo-grid-container'>
@@ -46,6 +46,24 @@ get_header(); ?>
     </div>
 
     <div id="front_contacts" style="background-color: #02b77b; height:390px;">
+
+        <div class="item_contact" style="background-color: rgb(244,215,5);">
+            <h3>SUIVEZ - NOUS</h3>
+            <p>Retrouvez nous sur nos réseaux sociaux</p>
+            <div id="icon_contact">
+                <i>1</i>
+                <i>2</i>
+                <i>3</i>
+            </div>
+        </div>
+        <div class="item_contact">
+            <h3>NEWSLETTER</h3>
+            <p>Je m’inscris gratuitement pour ne manquer aucune actualités</p>
+            <form id="form_contact">
+                <input type="email" name="email_newsletter" value="" placeholder="adresse email">
+                <input type="submit" name="" value="Je m'abonne'">
+            </form>
+        </div>
         
     </div>
 
