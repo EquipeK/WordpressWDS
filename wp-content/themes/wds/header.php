@@ -44,6 +44,7 @@
 	.site-title{
 		text-transform:uppercase;
 		font-weight:bold;
+		margin:0;
 	}
 	.site-branding{
 		color:white;
@@ -53,7 +54,14 @@
 		align-items:center;
 		margin-top:17%;
 	}
-	
+	.site-description{
+		margin: 0;
+	}
+	.site-intro{
+		font-weight:bold;
+		margin-top:5%;
+		font-size: x-large;
+	}
 </style>
 <body <?php body_class(); ?>>
 <div id="page home" class="site home">
@@ -71,6 +79,7 @@
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?= bloginfo( 'description' ); ?></h2>
+				<span class="site-intro">Dévelopeur, Web Designer, Chargé de Marketing Digital.. C'est métiers vous passionnent ?</span>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
