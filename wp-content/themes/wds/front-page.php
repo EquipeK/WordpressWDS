@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-    <div id="front_formations" style="background-color: #02b77b; height:730px;">
+    <div id="front_formations" style="">
         
     </div>
 
