@@ -98,6 +98,14 @@ function wds_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar(array(
+		'name'=>'Sidebar Header',
+		'id'=> 'sidebar-head',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
 }
 add_action( 'widgets_init', 'wds_widgets_init' );
 

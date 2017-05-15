@@ -52,7 +52,7 @@
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
-		margin-top:17%;
+		margin-top:20%;
 	}
 	.site-description{
 		margin: 0;
@@ -62,6 +62,7 @@
 		margin-top:5%;
 		font-size: x-large;
 	}
+	
 </style>
 <body <?php body_class(); ?>>
 <div id="page home" class="site home">
@@ -75,15 +76,7 @@
 			</nav>
 		</div>
 		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?= bloginfo( 'description' ); ?></h2>
-				<span class="site-intro">Dévelopeur, Web Designer, Chargé de Marketing Digital.. C'est métiers vous passionnent ?</span>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif; ?>
+			<?php dynamic_sidebar( 'sidebar-head' );  ?>
 		</div>
 	</header>
 </div>
