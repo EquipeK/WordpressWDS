@@ -12,43 +12,53 @@ get_header(); ?>
     <div id="front_formations" style="">
         
     </div>
-
-    <div id="front_video" style="height:800px;">
-        
-    </div>
-
-	<div id="front_primary" class="content-area" style="height:730px;">
-		<main id="main" class="site-main" role="main">
-
-        <div class='photo-grid-container'>
-            <div class='photo-grid'>
-                <?php
-                if ( have_posts() ) :
-                    
-                    while ( have_posts() ) : the_post();?>
-                        <div class='photo-grid-item'>
-                        <?php get_template_part( 'template-parts/content', 'front' );?>
-                        </div>
-                        <?php
-                    endwhile;
-                else :
-
-                    get_template_part( 'template-parts/content', 'none' );
-
-                endif;?>
+    
+    <div class="container">
+        <div id="front_video" style="height:800px;">
+            <div>   
+                <h3>WDS</h3>
+                <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
+                    d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.
+                </p>
+                <a class="waves-effect waves-light btn">Voir +</a>
             </div>
         </div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-    <div id="front_entreprises" style="height:730px;">
-        
-    </div>
+        <div id="front_primary" class="content-area" style="height:730px;">
+            <main id="main" class="site-main" role="main">
 
-    <div id="front_contacts" style="background-color: #02b77b; height:390px;">
+            <div class='photo-grid-container'>
+                <div class='photo-grid'>
+                    <?php
+                    if ( have_posts() ) :
+                        
+                        while ( have_posts() ) : the_post();?>
+                            <div class='photo-grid-item'>
+                            <?php get_template_part( 'template-parts/content', 'front' );?>
+                            </div>
+                            <?php
+                        endwhile;
+                    else :
 
-        <div class="item_contact" style="background-color: rgb(244,215,5);">
-            <h3>SUIVEZ - NOUS</h3>
+                        get_template_part( 'template-parts/content', 'none' );
+
+                    endif;?>
+                </div>
+            </div>
+            </main><!-- #main -->
+        </div><!-- #primary -->
+
+        <div id="front_entreprises">
+            <div>   
+                <h3>ENTREPRISES</h3>
+                <p>Vous recherchez des stagiaires ou des étudiants en alternance</p>
+                <a class="waves-effect waves-light btn">Je suis entreprise</a>
+            </div>
+        </div>
+    
+    <div id="front_contacts">
+        <div class="item_contact">
+            <h5>SUIVEZ - NOUS</h5>
             <p>Retrouvez nous sur nos réseaux sociaux</p>
             <div id="icon_contact">
                 <i>1</i>
@@ -57,14 +67,15 @@ get_header(); ?>
             </div>
         </div>
         <div class="item_contact">
-            <h3>NEWSLETTER</h3>
+            <h5>NEWSLETTER</h5>
             <p>Je m’inscris gratuitement pour ne manquer aucune actualités</p>
             <form id="form_contact">
                 <input type="email" name="email_newsletter" value="" placeholder="adresse email">
-                <input type="submit" name="" value="Je m'abonne'">
+                <input type="submit" name="" value="Je m'abonne">
             </form>
         </div>
         
+    </div>
     </div>
 
 <?php

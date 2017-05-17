@@ -56,6 +56,30 @@ figure {
     align-items: center;  /* Add this */
 }
 
+//video
+#front_video
+{
+  color:$color__text-ondark;
+  height:730px;
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center;
+  div{
+    background-color: $violet; 
+    opacity: 0.9;
+    height:600px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content:space-around;
+    a{
+      border-radius:50px;
+    }       
+  }
+}
+
 #front_primary
 {
   float: none;
@@ -87,6 +111,29 @@ figure {
   height: 300px;
 }
 
+//Entreprises
+#front_entreprises
+{
+  color:$color__text-ondark;
+  height:730px;
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center;
+  div{
+    background-color: $violet; 
+    opacity: 0.9;
+    height:600px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content:space-around;
+    a{
+      border-radius:50px;
+    }       
+  }
+}
 
 //Contact
 
@@ -94,12 +141,12 @@ figure {
 {
   display: flex;
   justify-content: center;
+  height:390px;
 }
 
 .item_contact
 {
   width:38%;
-  background-color: $main_design;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,15 +177,22 @@ figure {
     text-align: center;
     height: 45px;
     padding: 0;
+    border: 1px solid;
   }
   input[type="email"]
   {
     flex:2;
+    color:black;
+    border-color: black;
   }
   input[type="submit"]
   {
     flex:1;
     margin-left: -45px;
+    height: 47px;
+    color:$color__text-ondark;
+    border-color: $main_design;
+    background: $main_design;
   }
 }
 
