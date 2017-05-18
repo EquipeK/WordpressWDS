@@ -56,27 +56,25 @@ get_header(); ?>
             </div>
         </div>
     
-    <div id="front_contacts">
-        <div class="item_contact">
-            <h5>SUIVEZ - NOUS</h5>
-            <p>Retrouvez nous sur nos réseaux sociaux</p>
-            <div id="icon_contact">
-                <i>1</i>
-                <i>2</i>
-                <i>3</i>
+        <div id="front_contacts">
+            <div class="item_contact">
+                <h5>SUIVEZ - NOUS</h5>
+                <p>Retrouvez nous sur nos réseaux sociaux</p>
+                <div id="icon_contact">
+                    <i>1</i>
+                    <i>2</i>
+                    <i>3</i>
+                </div>
+            </div>
+            <div class="item_contact">
+                <h5>NEWSLETTER</h5>
+                <p>Je m’inscris gratuitement <br> pour ne manquer aucune actualités</p>
+                <form id="form_contact">
+                    <input type="email" name="email_newsletter" value="" placeholder="adresse email">
+                    <input type="submit" name="" value="Je m'abonne">
+                </form>
             </div>
         </div>
-        <div class="item_contact">
-            <h5>NEWSLETTER</h5>
-            <p>Je m’inscris gratuitement pour ne manquer aucune actualités</p>
-            <form id="form_contact">
-                <input type="email" name="email_newsletter" value="" placeholder="adresse email">
-                <input type="submit" name="" value="Je m'abonne">
-            </form>
-        </div>
-        
     </div>
-    </div>
-
 <?php
 get_footer();

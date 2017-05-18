@@ -46,13 +46,17 @@ figure {
 
 
 // Footer
+
+footer
+{
+	background-color: $footer;
+}
 .site-info {
   display: flex;
   justify-content: space-between;
 }
 
 .footer-item {
-  background-color: $footer;
   color: white;
   height: 100px;
   flex: 1;
@@ -60,12 +64,6 @@ figure {
   text-align: center;
   display: flex;
   justify-content: center;
-}
-
-.footer-one,
-.footer-three {
-  flex: initial;
-  width: 200px;
 }
 
 #icon_footer
