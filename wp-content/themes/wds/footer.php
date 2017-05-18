@@ -18,7 +18,7 @@
 				<div class='footer-item footer-two'>
 					<div class='footer-item'>
 						<div class='footer-item' id="icon_footer">
-							icon
+							<object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/icon_map.svg">Your browser does not support SVGs</object>
 						</div>
 						<div class='footer-item'>
 							297 rue Eugène Berest </br>

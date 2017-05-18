@@ -101,15 +101,9 @@
 
 #icon_contact
 {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
-  i
-  {
-    background-color: lightgreen;
-    width:20%;
-    //en attendant les vrai icones
-  }
 }
 
 #form_contact
@@ -122,21 +116,35 @@
     text-align: center;
     height: 45px;
     padding: 0;
-    border: 1px solid;
+    box-shadow: 1px 5px 10px 0px rgba(0,0,0,.16);
+    border: none;
   }
   input[type="email"]
   {
     flex:2;
-    color:black;
-    border-color: black;
   }
   input[type="submit"]
   {
     flex:1;
     margin-left: -45px;
-    height: 47px;
     color:$color__text-ondark;
-    border-color: $main_design;
     background: $main_design;
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color__text-main;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $color__text-main;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $color__text-main;
+    opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color__text-main;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color__text-main;
   }
 }

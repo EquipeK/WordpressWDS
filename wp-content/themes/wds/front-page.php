@@ -61,9 +61,9 @@ get_header(); ?>
                 <h5>SUIVEZ - NOUS</h5>
                 <p>Retrouvez nous sur nos réseaux sociaux</p>
                 <div id="icon_contact">
-                    <i>1</i>
-                    <i>2</i>
-                    <i>3</i>
+                    <object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/logo_fb.svg">Your browser does not support SVGs</object>
+                    <object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/logo_ig.svg">Your browser does not support SVGs</object>
+                    <object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/logo_twi.svg">Your browser does not support SVGs</object>
                 </div>
             </div>
             <div class="item_contact">
