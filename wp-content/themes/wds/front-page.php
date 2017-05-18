@@ -49,10 +49,12 @@ get_header(); ?>
         </div><!-- #primary -->
 
         <div id="front_entreprises">
-            <div>   
-                <h3>ENTREPRISES</h3>
-                <p>Vous recherchez des stagiaires ou des étudiants en alternance</p>
-                <a class="waves-effect waves-light btn">Je suis entreprise</a>
+            <div>
+                <div>
+                    <h4>ENTREPRISES</h3>
+                    <p>Vous recherchez des stagiaires ou <br> des étudiants en alternance</p>
+                    <a class="waves-effect waves-light btn">Je suis une entreprise</a>
+                </div>   
             </div>
         </div>
     
