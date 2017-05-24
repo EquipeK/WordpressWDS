@@ -25,15 +25,38 @@
 	.img_header{
 		z-index:0;
 	}
-	.wp_nav_menu{
+	.menu-menu_nav-container{
 		float:right;
 		width:65%;
 		margin-top:1.5%;
 	}
-	.wp_nav_menu > ul > li{
+	.menu-menu_nav-container > ul > li{
 		text-align:center;
 		width:20%;
 	}
+	.menu-menu_nav-container > ul > li > a:hover{
+		color:#fff;
+		background-color:rgba(0,0,0,0);
+		font-weight:bold;
+		color: #d94f5c;
+		-webkit-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+	.menu-menu_nav-container > ul > li:nth-last-child(2){
+		border-left: solid 1px white;
+	}
+	.menu-menu_nav-container > ul > li:last-child > a >span{
+		display:none;
+	}
+	.menu-menu_nav-container > ul > li:last-child{
+		text-align:center;
+		width:auto;
+		background-color: green;
+		border-radius: 47px;
+		height: 52px;
+		margin-top: 9px;
+	}
+	
 	.nav{
 		background-color:rgba(0,0,0,0);
 		box-shadow:none;
@@ -71,7 +94,7 @@
 			<nav class="nav">
 				<div class="nav-wrapper">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-hd-blanc.png"/></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'wp_nav_menu hide-on-med-and-down' ) ); ?>
+					<?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
 				</div>
 			</nav>
 		</div>
