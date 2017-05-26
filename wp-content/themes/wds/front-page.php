@@ -26,25 +26,39 @@ get_header(); ?>
 
         <div id="front_primary" class="content-area" style="height:730px;">
             <main id="main" class="site-main" role="main">
-
-            <div class='photo-grid-container'>
-                <div class='photo-grid'>
-                    <?php
-                    if ( have_posts() ) :
+            <h5>L'ACTU</h5>
+            <p>Retrouvez toutes les actus de l'école</p>
+            <div class="row">
+                <div id="actu-1" class="col s7" style="height:500px; background-color:#353533">
+                    
+                </div>
+                <div class="col s5" style="height:500px; background-color:#efd502; padding:0;">
+                    <div id="actu-2" style="height:250px; width:100%;">
                         
-                        while ( have_posts() ) : the_post();?>
-                            <div class='photo-grid-item'>
-                            <?php get_template_part( 'template-parts/content', 'front' );?>
-                            </div>
-                            <?php
-                        endwhile;
-                    else :
-
-                        get_template_part( 'template-parts/content', 'none' );
-
-                    endif;?>
+                    </div>
+                    <div id="actu-3"  style="height:250px; background-color:#07b57a; width:100%;">
+                        
+                    </div>
                 </div>
             </div>
+                <?php
+                // VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV TOUT EN POUVANT EN CHARGER PLUS QUE 3
+                // if ( have_posts() ) :
+                //$i = 0;
+                //    while ( have_posts() ) : the_post();?>
+                        <?php 
+                        // get_template_part( 'template-parts/content', 'front' );
+                        ?>
+                        <?php
+                    //$i++;
+                    //echo $i;
+                    //endwhile;
+                //else :
+
+                    //get_template_part( 'template-parts/content', 'none' );
+
+                //endif;?>
+                
             </main><!-- #main -->
         </div><!-- #primary -->
 
