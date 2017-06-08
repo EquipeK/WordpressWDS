@@ -3,24 +3,38 @@
 //video
 #front_video
 {
-  color:$color__text-ondark;
+  color:$color__text-main;
   height:730px;
   display:flex; 
-  
   justify-content: center;
-  div{
-    background-color: $violet; 
-    opacity: 0.9;
+  #yellow-block{
+    background-color: $main_res; 
+    opacity: 0.8;
     height:600px;
-    width:40%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content:space-around;
-    a{
-      border-radius:50px;
-    }       
+    justify-content:center;
+    @media (min-width: 1445px) 
+      {
+        justify-content:flex-end;
+      }
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content:space-around;
+      height: 300px;
+      a{
+        border-radius:50px;
+        background-color:white;
+        color:$violet;
+        &:hover
+        {
+          background-color:$color__border-button-hover;
+        }
+      }       
+    }
   }
 }
 

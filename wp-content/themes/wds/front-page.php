@@ -14,14 +14,24 @@ get_header(); ?>
     </div>
     
     <div class="container">
+    <!-- Faire un autre bloc de meme taille et le superposer grace a une margin negative
+        mettre son display a none et inverser le display des deux blocs au clic avec javascript -->
+        <!-- Mettre en background du premier bloc une image de la video en attente-->
         <div id="front_video" style="height:800px;">
-            <div>   
-                <h3>WDS</h3>
-                <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
-                    d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.
-                </p>
-                <a class="waves-effect waves-light btn">Voir +</a>
+            <div class="row">
+                <div class="col s7">
+                    
+                </div>
+                <div id="yellow-block" class="col s5">
+                    <div id="yellow-block-text">
+                        <h4>WDS</h3>
+                        <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
+                        d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.</p>
+                        <a class="waves-effect waves-light btn">Voir +</a>
+                    </div>   
+                </div>
             </div>
+            
         </div>
 
         <div id="front_primary" class="content-area" style="height:730px;">
