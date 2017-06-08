@@ -38,25 +38,43 @@
 		color:#fff;
 		background-color:rgba(0,0,0,0);
 		font-weight:bold;
-		color: #d94f5c;
+		color: #07b57a;
 		-webkit-transition: color 0.5s;
 		transition: color 0.5s;
 	}
-	.menu-menu_nav-container > ul > li:nth-last-child(2){
+	.menu-menu_nav-container > ul > li:nth-last-child(3){
 		border-left: solid 1px white;
 	}
-	.menu-menu_nav-container > ul > li:last-child > a >span{
+	.menu-menu_nav-container > ul > li:nth-last-child(2) > a >span{
 		display:none;
 	}
-	.menu-menu_nav-container > ul > li:last-child{
+	.menu-menu_nav-container > ul > li:nth-last-child(2){
 		text-align:center;
 		width:auto;
-		background-color: green;
+		background-color: #07b57a;
 		border-radius: 47px;
 		height: 52px;
 		margin-top: 9px;
 	}
-	
+	.menu-menu_nav-container > ul > li > a{
+		margin-top: -9px;
+    	padding-left: 16px
+	}
+	.menu-line{
+		position: absolute;
+		top: 100%;
+		width: 3% !important;
+		height: 2px;
+		margin-left: 5%;
+		margin-top:1%;
+		pointer-events: none;
+		background: #07b57a;
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+		transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+	}
 	.nav{
 		background-color:rgba(0,0,0,0);
 		box-shadow:none;
@@ -85,7 +103,7 @@
 		margin-top:5%;
 		font-size: x-large;
 	}
-	
+
 </style>
 <body <?php body_class(); ?>>
 <div id="page home" class="site home">
@@ -104,3 +122,37 @@
 	</header>
 </div>
 <div id="content" class="site-content">
+<script>
+	(function() {
+		$(".menu-line").css('visibility','hidden')
+		$('#menu-menu_nav').append('<li class="menu-line"></li>')
+		$('#menu-menu_nav > li:nth-child(1)').hover(function(){
+			$(".menu-line").css('visibility','visible')
+			$(".menu-line").css('-webkit-transform', 'translate3d(0%, 0, 0)');
+			$(".menu-line").css('transform', 'translate3d(0%, 0, 0)');
+		}, function(){
+			$(".menu-line").css('visibility','hidden')
+		})
+		$('#menu-menu_nav > li:nth-child(2)').hover(function(){
+			$(".menu-line").css('visibility','visible')
+			$(".menu-line").css('-webkit-transform', 'translate3d(440%, 0, 0)');
+			$(".menu-line").css('transform', 'translate3d(440%, 0, 0)');
+		}, function(){
+			$(".menu-line").css('visibility','hidden')
+		})
+		$('#menu-menu_nav > li:nth-child(3)').hover(function(){
+			$(".menu-line").css('visibility','visible')
+			$(".menu-line").css('-webkit-transform', 'translate3d(880%, 0, 0)');
+			$(".menu-line").css('transform', 'translate3d(880%, 0, 0)');
+		}, function(){
+			$(".menu-line").css('visibility','hidden')
+		})
+		$('#menu-menu_nav > li:nth-child(4)').hover(function(){
+			$(".menu-line").css('visibility','visible')
+			$(".menu-line").css('-webkit-transform', 'translate3d(1320%, 0, 0)');
+			$(".menu-line").css('transform', 'translate3d(1320%, 0, 0)');
+		}, function(){
+			$(".menu-line").css('visibility','hidden')
+			})
+	})(window);
+</script>
