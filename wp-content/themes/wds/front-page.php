@@ -14,7 +14,7 @@ get_header(); ?>
     </div>
     
     <div class="container">
-        <div id="front_video" style="height:800px;">
+        <div id="front_video" style="height:700px;">
             <div>   
                 <h3>WDS</h3>
                 <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
