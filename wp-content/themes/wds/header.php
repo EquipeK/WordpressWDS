@@ -25,16 +25,16 @@
 	.img_header{
 		z-index:0;
 	}
-	.menu-menu_nav-container{
+	.menu-menu-1-container{
 		float:right;
 		width:65%;
 		margin-top:1.5%;
 	}
-	.menu-menu_nav-container > ul > li{
+	.menu-menu-1-container > ul > li{
 		text-align:center;
 		width:20%;
 	}
-	.menu-menu_nav-container > ul > li > a:hover{
+	.menu-menu-1-container > ul > li > a:hover{
 		color:#fff;
 		background-color:rgba(0,0,0,0);
 		font-weight:bold;
@@ -42,13 +42,13 @@
 		-webkit-transition: color 0.5s;
 		transition: color 0.5s;
 	}
-	.menu-menu_nav-container > ul > li:nth-last-child(3){
+	.mmenu-menu-1-container > ul > li:nth-last-child(3){
 		border-left: solid 1px white;
 	}
-	.menu-menu_nav-container > ul > li:nth-last-child(2) > a >span{
+	.menu-menu-1-container > ul > li:nth-last-child(2) > a >span{
 		display:none;
 	}
-	.menu-menu_nav-container > ul > li:nth-last-child(2){
+	.menu-menu-1-container > ul > li:nth-last-child(2){
 		text-align:center;
 		width:auto;
 		background-color: #07b57a;
@@ -56,7 +56,7 @@
 		height: 52px;
 		margin-top: 9px;
 	}
-	.menu-menu_nav-container > ul > li > a{
+	.menu-menu-1-container > ul > li > a{
 		margin-top: -9px;
     	padding-left: 16px
 	}
@@ -113,9 +113,11 @@
 				<div class="nav-wrapper">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-hd-blanc.png"/></a>
 					<?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
+					<?php wp_nav_menu( array('menu_class' => 'side-nav' ) ); ?>
 				</div>
 			</nav>
 		</div>
+		<?php  ?>
 		<div class="site-branding">
 			<?php dynamic_sidebar( 'sidebar-head' );  ?>
 		</div>
@@ -123,31 +125,32 @@
 </div>
 <div id="content" class="site-content">
 <script>
+	//animation hover nav
 	(function() {
 		$(".menu-line").css('visibility','hidden')
-		$('#menu-menu_nav').append('<li class="menu-line"></li>')
-		$('#menu-menu_nav > li:nth-child(1)').hover(function(){
+		$('#menu-menu-1').append('<li class="menu-line"></li>')
+		$('#menu-menu-1 > li:nth-child(1)').hover(function(){
 			$(".menu-line").css('visibility','visible')
 			$(".menu-line").css('-webkit-transform', 'translate3d(0%, 0, 0)');
 			$(".menu-line").css('transform', 'translate3d(0%, 0, 0)');
 		}, function(){
 			$(".menu-line").css('visibility','hidden')
 		})
-		$('#menu-menu_nav > li:nth-child(2)').hover(function(){
+		$('#menu-menu-1 > li:nth-child(2)').hover(function(){
 			$(".menu-line").css('visibility','visible')
 			$(".menu-line").css('-webkit-transform', 'translate3d(440%, 0, 0)');
 			$(".menu-line").css('transform', 'translate3d(440%, 0, 0)');
 		}, function(){
 			$(".menu-line").css('visibility','hidden')
 		})
-		$('#menu-menu_nav > li:nth-child(3)').hover(function(){
+		$('#menu-menu-1 > li:nth-child(3)').hover(function(){
 			$(".menu-line").css('visibility','visible')
 			$(".menu-line").css('-webkit-transform', 'translate3d(880%, 0, 0)');
 			$(".menu-line").css('transform', 'translate3d(880%, 0, 0)');
 		}, function(){
 			$(".menu-line").css('visibility','hidden')
 		})
-		$('#menu-menu_nav > li:nth-child(4)').hover(function(){
+		$('#menu-menu-1 > li:nth-child(4)').hover(function(){
 			$(".menu-line").css('visibility','visible')
 			$(".menu-line").css('-webkit-transform', 'translate3d(1320%, 0, 0)');
 			$(".menu-line").css('transform', 'translate3d(1320%, 0, 0)');
@@ -155,4 +158,11 @@
 			$(".menu-line").css('visibility','hidden')
 			})
 	})(window);
+	(function(){
+		$(window).scroll(function(){
+			$(".nav-wrapper").css('visibility', 'hidden');
+			if($(window).scrollTop() === 0)	$(".nav-wrapper").css('visibility', 'visible')
+		})
+
+	})(window)
 </script>
