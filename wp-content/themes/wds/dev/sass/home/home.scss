@@ -3,13 +3,16 @@
 //video
 #front_video
 {
-  color:$color__text-main;
+  color:$color__text-ondark;
   height:730px;
   display:flex; 
   justify-content: center;
+  background-image: url(dev/images/videoimage.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 25%;
   #yellow-block{
-    background-color: $main_res; 
-    opacity: 0.8;
+    background-color: rgba(239,213,2,0.8);
     height:600px;
     display: flex;
     align-items: center;
@@ -25,10 +28,11 @@
       text-align: center;
       justify-content:space-around;
       height: 300px;
+      opacity: 1;
       a{
         border-radius:50px;
         background-color:white;
-        color:$violet;
+        color:$main_res;
         &:hover
         {
           background-color:$color__border-button-hover;
@@ -81,9 +85,9 @@
 #front_entreprises
 {
   color:$color__text-ondark;
-  //height:730px;
+
   display:flex; 
-  //justify-content: center;
+
   background-image: url('./dev/images/img_entreprise.jpg');
   background-repeat: no-repeat;
   background-position: center; 
@@ -91,7 +95,6 @@
     background-color: $violet; 
     opacity: 0.8;
     height:600px;
-    width:45%;
     display: flex;
     align-items: center;
     justify-content:center;

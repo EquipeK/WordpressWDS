@@ -14,24 +14,19 @@ get_header(); ?>
     </div>
     
     <div class="container">
-    <!-- Faire un autre bloc de meme taille et le superposer grace a une margin negative
-        mettre son display a none et inverser le display des deux blocs au clic avec javascript -->
-        <!-- Mettre en background du premier bloc une image de la video en attente-->
+    <!-- Voir comment on veut afficher la video au click -->
         <div id="front_video" style="height:800px;">
             <div class="row">
-                <div class="col s7">
-                    
-                </div>
-                <div id="yellow-block" class="col s5">
-                    <div id="yellow-block-text">
-                        <h4>WDS</h3>
+                <div id="yellow-block" class="col s4 push-s7">
+                    <div id="yellow-block-text" class="col s9 pull-s3">
+                        <img style="width:65%;" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png" alt="">
                         <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
                         d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.</p>
                         <a class="waves-effect waves-light btn">Voir +</a>
-                    </div>   
+                    </div>
+                       
                 </div>
             </div>
-            
         </div>
 
         <div id="front_primary" class="content-area" style="height:730px;">
@@ -39,8 +34,26 @@ get_header(); ?>
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
             <div class="row">
-                <div id="actu-1" class="col s7" style="height:500px; background-color:#353533">
-                    
+                <div id="actu-1" class="col s5 push-s2" style="height:500px; background-color:#353533">
+                    <?php
+                // VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV
+                // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
+                if ( have_posts() ) :
+                // apres creation des catégorie faire une custom query "news"
+                $i = 1;
+                
+                    while ( have_posts() ) : the_post();?>
+                        <?php 
+                        get_template_part( 'template-parts/content', 'front' );
+                        ?>
+                        <?php
+                    $i++;
+                    endwhile;
+                else :
+
+                    get_template_part( 'template-parts/content', 'none' );
+
+                endif;?>
                 </div>
                 <div class="col s5" style="height:500px; background-color:#efd502; padding:0;">
                     <div id="actu-2" style="height:250px; width:100%;">
@@ -50,37 +63,20 @@ get_header(); ?>
                         
                     </div>
                 </div>
-            </div>
-                <?php
-                // VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV TOUT EN POUVANT EN CHARGER PLUS QUE 3
-                // if ( have_posts() ) :
-                //$i = 0;
-                //    while ( have_posts() ) : the_post();?>
-                        <?php 
-                        // get_template_part( 'template-parts/content', 'front' );
-                        ?>
-                        <?php
-                    //$i++;
-                    //echo $i;
-                    //endwhile;
-                //else :
-
-                    //get_template_part( 'template-parts/content', 'none' );
-
-                //endif;?>
-                
+            </div>       
             </main><!-- #main -->
         </div><!-- #primary -->
 
         <div id="front_entreprises">
-            <div id="purple-block">
+            <div class="row">
+            <div id="purple-block" class="col s4 push-s1">
                 <div id="purple-block-text">
                     <h4>ENTREPRISES</h3>
                     <p>Vous recherchez des stagiaires ou <br> des étudiants en alternance</p>
                     <a class="waves-effect waves-light btn">Je suis une entreprise</a>
                 </div>   
             </div>
-            <div id="other-block">
+            <div id="other-block" class="col s5 push-s1">
                 <div id="other-block-text">
                     <div>
                         <h5>test</h5>
@@ -101,6 +97,7 @@ get_header(); ?>
                         <h5>test</h5>
                     </div>
                 </div>   
+            </div>
             </div>
         </div>
     
