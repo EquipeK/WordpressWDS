@@ -4,3 +4,5 @@ debug.log
 dist/.DS_Store
 wp-content/.DS_Store
 wp-content/themes/.DS_Store
+wp-config.php
+.htaccess
