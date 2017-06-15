@@ -20,9 +20,9 @@ define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/WordpressWDS/wp
 define('WP_DEFAULT_THEME', 'wds');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp_wds');
+define('DB_NAME', 'website');
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'website');
 /** MySQL database password */
 define('DB_PASSWORD', 'root');
 /** MySQL hostname */
