@@ -21,68 +21,71 @@
 </head>
 <style>
 	.home{
-		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
-		background-repeat: no-repeat;
-		background-size:100%;
-		min-height:1200px;
 	}
 	.img_header{
 		z-index:0;
 	}
 	.menu-menu_nav-container{
-		float:right;
 		width:65%;
-		margin-top:1.5%;
+		float:right;
 	}
+    .menu-menu_nav-container > ul{
+        height:100px;
+    }
 	.menu-menu_nav-container > ul > li{
 		text-align:center;
-		width:20%;
+        width:20%;
+		color: black;
+        height:inherit;
+        line-height:100px;
 	}
 	.menu-menu_nav-container > ul > li > a:hover{
-		color:#fff;
 		background-color:rgba(0,0,0,0);
-		font-weight:bold;
-		color: #07b57a;
+		font-weight:900;
 		-webkit-transition: color 0.5s;
 		transition: color 0.5s;
-	}
-	.menu-menu_nav-container > ul > li:nth-last-child(3){
-		border-left: solid 1px white;
 	}
 	.menu-menu_nav-container > ul > li:nth-last-child(2) > a >span{
 		display:none;
 	}
-	
 	.menu-menu_nav-container > ul > li:nth-last-child(2){
 		text-align:center;
 		width:auto;
 		background-color: #07b57a;
 		border-radius: 47px;
-		height: 52px;
+        height:50%;
         line-height:0px;
+        margin-top:2.5%;
 		margin-left:5%;
-	}
-	.menu-menu_nav-container > ul > li:nth-last-child(2) > a{
-		margin-top:23%;
+
 	}
 	.menu-menu_nav-container > ul > li:nth-last-child(2) > a > img{
 		margin:0;
 		width:100%;
 	}
+    .menu-menu_nav-container > ul > li:nth-last-child(2) > a{
+		padding-top:23%;
+	}
+   
+	.menu-menu_nav-container > ul > li:nth-last-child(3) > a {
+        color: white;
+	}
+	.menu-menu_nav-container > ul > li:nth-last-child(3){
+		background-color:black;
+	}
 	.menu-menu_nav-container > ul > li > a{
-		margin-top: -9px;
-    	padding-left: 16px
+		color: black;
+		height:inherit;
 	}
 	.menu-line{
 		position: absolute;
 		visibility:hidden;
-		top: 100%;
+		top: 75%;
 		width: 3% !important;
-		height: 2px;
+		height: 2px !important;
 		margin-left: 5%;
-		margin-top:1%;
 		pointer-events: none;
-		background: #07b57a;
+		background: #000;
 		-webkit-transition: -webkit-transform 0.5s;
 		transition: transform 0.5s;
 		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
@@ -90,56 +93,35 @@
 		transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
 	}
 	.nav{
-		background-color:rgba(0,0,0,0);
-		box-shadow:none;
+		background-color: #ffffff;
+		height:100px;
 	}
 	.logo{
 		width:10%;
 		margin-left:8%;
 		margin-top:0.7%
 	}
-	.site-title{
-		text-transform:uppercase;
-		font-weight:bold;
-		margin:0;
-	}
-	.site-branding{
-		color:white;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;
-		margin-top:20%;
-	}
-	.site-description{
-		margin: 0;
-	}
-	.site-intro{
-		font-weight:bold;
-		margin-top:5%;
-		font-size: x-large;
-	}
+	
 
 </style>
-
 <body <?php body_class(); ?>>
-<div id="page home" class="site home">
+<div id="page" class="site">
 	<header role="banner" >
 		<div class="navbar-fixed">
 			<nav class="nav">
 				<div class="nav-wrapper">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png"/></a>
-					<?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
+					
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-wds-noir.png"/></a>
+					<?php wp_nav_menu(array('menu_class' => 'hide-on-med-and-down' )); ?>
 				</div>
 			</nav>
 		</div>
-		<div class="site-branding">
-			<?php dynamic_sidebar( 'sidebar-head' );  ?>
-		</div>
+		<?php  ?>
 	</header>
 </div>
 <div id="content" class="site-content">
 <script>
+	//animation hover nav
 	(function() {
 		$(".menu-line").css('visibility','hidden')
 		$('#menu-menu_nav').append('<li class="menu-line"></li>')
@@ -164,19 +146,12 @@
 		}, function(){
 			$(".menu-line").css('visibility','hidden')
 		})
-		$('#menu-menu_nav > li:nth-child(4)').hover(function(){
-			$(".menu-line").css('visibility','visible')
-			$(".menu-line").css('-webkit-transform', 'translate3d(1320%, 0, 0)');
-			$(".menu-line").css('transform', 'translate3d(1320%, 0, 0)');
-		}, function(){
-			$(".menu-line").css('visibility','hidden')
-			})
 	})(window);
-
 	(function(){
 		$(window).scroll(function(){
 			$(".nav-wrapper").css('visibility', 'hidden');
 			if($(window).scrollTop() === 0)	$(".nav-wrapper").css('visibility', 'visible')
 		})
+
 	})(window)
 </script>
