@@ -34,17 +34,40 @@ get_header(); ?>
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
             <div class="row">
-                <div id="actu-1" class="col s5 push-s2" style="height:500px; background-color:#353533">
+            <div class="col s5 push-s2" style="height:500px; background-color:#353533">    
                     <?php
+                //  VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV
+                // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
+                query_posts('posts_per_page=1');
+                if ( have_posts() ) :
+                // apres creation des catégorie faire une custom query "news"
+                    while ( have_posts() ) : the_post();?>
+                        <?php 
+                        get_template_part( 'template-parts/content', 'article1' );
+                        ?>
+                        <?php
+                    endwhile;
+                else :
+
+                    get_template_part( 'template-parts/content', 'none' );
+
+                endif;?>
+            </div>
+
+            <div class="col s3 push-s2" style="height:500px; background-color:#efd502; padding:0;">
+                <?php
                 // VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
+                
+                query_posts('posts_per_page=3&offset=1');
+            
                 if ( have_posts() ) :
                 // apres creation des catégorie faire une custom query "news"
                 $i = 1;
                 
                     while ( have_posts() ) : the_post();?>
                         <?php 
-                        get_template_part( 'template-parts/content', 'front' );
+                        get_template_part( 'template-parts/content', 'article2' );
                         ?>
                         <?php
                     $i++;
@@ -54,14 +77,6 @@ get_header(); ?>
                     get_template_part( 'template-parts/content', 'none' );
 
                 endif;?>
-                </div>
-                <div class="col s5" style="height:500px; background-color:#efd502; padding:0;">
-                    <div id="actu-2" style="height:250px; width:100%;">
-                        
-                    </div>
-                    <div id="actu-3"  style="height:250px; background-color:#07b57a; width:100%;">
-                        
-                    </div>
                 </div>
             </div>       
             </main><!-- #main -->
