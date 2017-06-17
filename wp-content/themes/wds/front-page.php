@@ -29,14 +29,13 @@ get_header(); ?>
             </div>
         </div>
 
-        <div id="front_primary" class="content-area" style="height:730px;">
+        <div id="front_primary" class="content-area" style="min-height:730px;">
             <main id="main" class="site-main" role="main">
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
-            <div class="row">
-            <div class="col s5 push-s2" style="height:500px; background-color:#353533">    
+            <div class="row" style="max-height:500px;">
+            <div class="col s5 push-s2" style="min-height:500px; background-color:#353533">    
                     <?php
-                //  VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 query_posts('posts_per_page=1');
                 if ( have_posts() ) :
@@ -54,9 +53,8 @@ get_header(); ?>
                 endif;?>
             </div>
 
-            <div class="col s3 push-s2" style="height:500px; background-color:#efd502; padding:0;">
+            <div class="col s3 push-s2" style="height:500px; padding:0; background-color:#efd502;">
                 <?php
-                // VOIR COMMENT FAIRE POUR FIXER LES ARTICLES DANS LES 3 DIV
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 
                 query_posts('posts_per_page=3&offset=1');
