@@ -1,0 +1,64 @@
+@import "../variables-site/colors";
+@import "../mixins/mixins-master";
+.cardContact {
+    -moz-box-shadow: 10px 10px 30px 2px #9b9b9b;
+    -webkit-box-shadow: 10px 10px 30px 2px #9b9b9b;
+    -o-box-shadow: 10px 10px 30px 2px #9b9b9b;
+    box-shadow: 10px 10px 30px 2px #9b9b9b;
+    .contactContent {
+        padding: 0 !important;
+        .contactForm {
+            padding: 60px;
+            .card-title {
+                font-family: 'gilroy-extrabold';
+                margin-bottom: 35px;
+                font-size: 2em;
+                color: $color__text-main;
+            }
+            .contactTitle {
+                margin-left: 40px;
+                margin-bottom: 15px;
+                h3 {
+                    margin: 0;
+                    font-family: 'gilroy-light';
+                    font-size: 1.3em;
+                }
+            }
+            .contactStep {
+                margin-bottom: 15px;
+                font-family: 'gilroy-light';
+                font-size: 1.1em;
+            }
+        }
+        .contactCoord {
+            padding: 60px;
+            color: #FFF;
+            .coordTitle {
+                h3 {
+                    margin: 0;
+                    border-bottom: 1px solid #FFF;
+                    padding-bottom: 30px;
+                    font-family: 'gilroy-light';
+                    font-size: 1.3em;
+                    font-weight: 300;
+                }
+            }
+            .coordInfo {
+                font-family: 'gilroy-light';
+                font-size: 1em;
+            }
+        }
+        .contactCoordRes {
+            background-color: $main_res;
+        }
+        .contactCoordDev {
+            background-color: $main_dev;
+        }
+        .contactCoordMarket {
+            background-color: $main_market;
+        }
+        .contactCoordDesign {
+            background-color: $main_design;
+        }
+    }
+}
