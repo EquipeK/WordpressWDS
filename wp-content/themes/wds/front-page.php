@@ -55,18 +55,22 @@ get_header(); ?>
     
     <div class="container">
     <!-- Voir comment on veut afficher la video au click -->
+        
         <div id="front_video" style="height:800px;">
-            <div class="row">
-                <div id="yellow-block" class="col s4 push-s7">
+            <div id="ytapiplayer2" style="display:none;"></div>
+            <div class="row" id="bloc_video_pres">
+                <div class="col s3 push-s3" style="height:200px; margin-top:200px; cursor:pointer;">
+                    
+                </div>
+                <div id="yellow-block" class="col s4 push-s4">
                     <div id="yellow-block-text" class="col s9 pull-s3">
                         <img style="width:65%;" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png" alt="">
                         <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
                         d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.</p>
                         <a class="waves-effect waves-light btn">Voir +</a>
                     </div>
-                       
                 </div>
-            </div>
+            </div>   
         </div>
 
         <div id="front_primary" class="content-area" style="min-height:730px;">
