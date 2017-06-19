@@ -59,7 +59,7 @@ get_header(); ?>
         <div id="front_video" style="height:800px;">
             <div id="ytapiplayer2" style="display:none;"></div>
             <div class="row" id="bloc_video_pres">
-                <div class="col s3 push-s3" style="height:200px; margin-top:200px; cursor:pointer;">
+                <div class="col s3 push-s3" id="launch_video" style="height:200px; margin-top:200px; cursor:pointer;">
                     
                 </div>
                 <div id="yellow-block" class="col s4 push-s4">
