@@ -9,8 +9,48 @@
 
 get_header(); ?>
 
-    <div id="front_formations" style="">
-        
+    <div id="front_formations" style="min-height:800px; padding-top:100px;">
+        <div id="cf7" class="shadow">
+            <div class="row" style="min-height:600px">
+                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_sr.png" height="600px" />
+                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_md.png" height="600px"  />
+                <img class='opaque' id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_dg.png" height="600px"  />
+                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_d.png"  height="600px" />
+
+                <h2 class="formation">Nos Formations</h2>
+
+                <div id="menu" class="menu">
+                    <p id="cf7_controls">
+                        <span id="btn_sr" class="selected">Système et Réseaux <br /></span>
+                        <span id="btn_md">Marketing Digital <br /></span>
+                        <span id="btn_dg">Design Graphique <br /></span>
+                        <span id="btn_d">Développement <br /></span>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="right:15%">
+                <div id="txt_dev" class="txt col s7 push-s4">
+                    <h3 class="titre">Développement web</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites<br /> Web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel<br /> afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <a class="btn btn_d" href="">Découvrez</a>
+                </div>
+                <div id="txt_sr" class="txt col s7 push-s4">
+                    <h3 class="titre">Systèmes et Réseaux</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <a class="btn btn_sr" href="">Découvrez</a>
+                </div>
+                <div id="txt_md" class="txt col s7 push-s4">
+                    <h3 class="titre">Marketing Digital</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <a class="btn btn_md" href="">Découvrez</a>
+                </div>
+                <div id="txt_dg" class="txt col s7 push-s4">
+                    <h3 class="titre">Design Graphique</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <a class="btn btn_dg" href="">Découvrez</a>
+                </div>
+            </div>           
+        </div>
     </div>
     
     <div class="container">
