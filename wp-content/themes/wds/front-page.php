@@ -12,19 +12,19 @@ get_header(); ?>
     <div id="front_formations" style="min-height:800px; padding-top:100px;">
         <div id="cf7" class="shadow">
             <div class="row" style="min-height:600px">
-                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_sr.png" height="600px" />
-                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_md.png" height="600px"  />
-                <img class='opaque' id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_dg.png" height="600px"  />
+                <img class='opaque' id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_md.png" height="600px"  />
+                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_dg.png" height="600px"  />
                 <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_d.png"  height="600px" />
+                <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_sr.png" height="600px" />
 
                 <h2 class="formation">Nos Formations</h2>
 
                 <div id="menu" class="menu">
                     <p id="cf7_controls">
-                        <span id="btn_sr" class="selected">Système et Réseaux <br /></span>
-                        <span id="btn_md">Marketing Digital <br /></span>
-                        <span id="btn_dg">Design Graphique <br /></span>
-                        <span id="btn_d">Développement <br /></span>
+                        <span id="btn_md" class="selected">Bac +2 Marketing Digital <br /></span>
+                        <span id="btn_dg">Mastère 1 Design Graphique <br /></span>                        
+                        <span id="btn_d">Mastère 1 Développement <br /></span>
+                        <span id="btn_sr" >Mastère 1 Système & Réseau <br /></span>
                     </p>
                 </div>
             </div>
@@ -53,9 +53,7 @@ get_header(); ?>
         </div>
     </div>
     
-    <div class="container">
-    <!-- Voir comment on veut afficher la video au click -->
-        
+    <div class="container" style="padding-top:100px">        
         <div id="front_video" style="height:800px;">
             <div id="ytapiplayer2" style="display:none;"></div>
             <div class="row" id="bloc_video_pres">

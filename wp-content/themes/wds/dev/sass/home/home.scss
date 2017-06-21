@@ -9,7 +9,7 @@
   -moz-transition: background-color 1s ease-in-out;
   -o-transition: background-color 1s ease-in-out;
   transition: background-color 1s ease-in-out;
-  background-color:$main_design;
+  background-color:$main_market;
 }
 #front_formations .btn {
   background-color: #fafafa;
@@ -95,22 +95,22 @@ p#cf7_controls {
 
 #btn_sr:hover
 {
-  color:$main_res;
+  color:$color__border-button;
 }
 
 #btn_md:hover
 {
-  color:$main_market;
+  color:$color__border-button;
 }
 
 #btn_dg:hover
 {
-  color:$main_design;
+  color:$color__border-button;
 }
 
 #btn_d:hover
 {
-  color:$main_dev;
+  color:$color__border-button;
 }
 
 #cf7 {

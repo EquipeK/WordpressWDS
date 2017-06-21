@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#txt_dev').hide();
-	$('#txt_dg').show();
-	$('#txt_md').hide();
+	$('#txt_dg').hide();
+	$('#txt_md').show();
 	$('#txt_sr').hide();
 
 	$('#btn_d').click(function (){
