@@ -9,15 +9,17 @@
 
 ?>
 
-	<article style="color:white;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<?php the_title( '<h6 class="entry-title">', '</h6>' ); ?>
-		</header><!-- .entry-header -->
+	<article style="color:white; margin:0;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<img id="article_gros" class="object-fit_cover" src="<?php echo get_template_directory_uri()?>/dev/images/actu_paddle.png" alt="">
 
-		<div class="entry-content">
+		<div id="resume_article_gros" class="entry-content resume_article">
 			<?php
 				the_content();
 			?>
 		</div><!-- .entry-content -->
+
+		<header class="entry-header titre_article">
+			<?php the_title( '<h6 class="entry-title">', '</h6>' ); ?>
+		</header><!-- .entry-header -->
 
 	</article><!-- #post-## -->

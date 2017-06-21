@@ -203,6 +203,73 @@ p#cf7_controls {
   }
 }
 
+.object-fit_cover {
+   object-fit: cover;
+   width:100%;
+   opacity: 0.5;
+}
+.article_petit
+{
+  height: 250px;
+}
+
+#article_gros
+{
+  height:500px; 
+}
+
+.titre_article
+{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#titre_article_top
+{
+  bottom:250px;
+}
+
+.resume_article
+{
+  visibility: hidden;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  left: 12.5%;
+  bottom:60%;
+  background-color: $main_res;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all  0.5s ease;
+  -o-transition: all  0.5s ease;
+  transition: all  0.5s ease;
+}
+
+.animation_article
+{
+  opacity: 0.8;
+  visibility: visible;
+}
+
+#resume_article_bot
+{
+  bottom:10%;
+  background-color: $main_dev;
+}
+
+#resume_article_gros
+{
+  width: 250px;
+  height: 200px;
+  left: 25%;
+  bottom:25%;
+  background-color: $footer;
+}
+
+
 //Entreprises
 #front_entreprises
 {

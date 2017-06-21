@@ -76,7 +76,7 @@ get_header(); ?>
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
             <div class="row" style="max-height:500px;">
-            <div class="col s5 push-s2" style="min-height:500px; background-color:#353533">    
+            <div class="col s5 push-s2" style="padding:0;max-height:500px; background-color:#353533">    
                     <?php
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 query_posts('posts_per_page=1');
@@ -95,9 +95,8 @@ get_header(); ?>
                 endif;?>
             </div>
 
-            <div class="col s3 push-s2" style="height:500px; padding:0; background-color:#efd502;">
+            <div class="col s3 push-s2" style="max-height:500px; padding:0;">
                 <?php
-                // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 
                 query_posts('posts_per_page=3&offset=1');
             
