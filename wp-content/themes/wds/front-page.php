@@ -11,7 +11,7 @@ get_header(); ?>
 
     <div id="front_formations" style="min-height:800px; padding-top:100px;">
         <div id="cf7" class="shadow">
-            <div class="row" style="min-height:600px">
+            <div class="row" style="min-height:400px">
                 <img class='opaque' id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_md.png" height="600px"  />
                 <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_dg.png" height="600px"  />
                 <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_d.png"  height="600px" />
@@ -19,14 +19,22 @@ get_header(); ?>
 
                 <h2 class="formation">Nos Formations</h2>
 
-                <div id="menu" class="menu">
+                <!--<div id="menu" class="menu">
                     <p id="cf7_controls">
-                        <span id="btn_md" class="selected">Bac +2 Marketing Digital <br /></span>
+                        <span id="btn_md" class="selected"><a href="#"></a>Bac +2 Marketing Digital <br /></span>
                         <span id="btn_dg">Mastère 1 Design Graphique <br /></span>                        
                         <span id="btn_d">Mastère 1 Développement <br /></span>
                         <span id="btn_sr" >Mastère 1 Système & Réseau <br /></span>
                     </p>
-                </div>
+                </div>-->
+
+                
+                <ul id="cf7_controls" class="dotstyle dotstyle-hop">
+                    <li id="btn_md" class="selected current"><a class="myLinks"></a>Bac +2 Marketing Digital</li>
+                    <li id="btn_dg"><a class="myLinks"></a>Mastère 1 Design Graphique</li>
+                    <li id="btn_d"><a class="myLinks"></a>Mastère 1 Développement</li>
+                    <li id="btn_sr"><a class="myLinks"></a>Mastère 1 Système & Réseau</li>
+                </ul>
             </div>
             <div class="row" style="right:15%">
                 <div id="txt_dev" class="txt col s7 push-s4">
