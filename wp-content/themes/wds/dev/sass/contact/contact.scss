@@ -8,11 +8,12 @@
     .contactContent {
         padding: 0 !important;
         .contactForm {
+            position: relative;
             padding: 60px;
             .card-title {
                 font-family: 'gilroy-extrabold';
                 margin-bottom: 35px;
-                font-size: 1.250em;
+                font-size: 1.375em;
                 color: $color__text-main;
             }
             .contactTitle {
@@ -21,16 +22,72 @@
                 h3 {
                     margin: 0;
                     font-family: 'gilroy-extrabold';
-                    font-size: 1em;
+                    font-size: 1.125em;
                 }
             }
             .contactStep {
                 margin-bottom: 15px;
                 font-family: 'gilroy-light';
-                font-size: 1em;
+                font-size: 1.125em;
+            }
+            #market {
+                &:not(:checked)+label:before {
+                    border-color: $main_market;
+                }
+                &:checked+label:after {
+                    background: $main_market;
+                    border-color: $main_market;
+                }
+            }
+            #design {
+                &:not(:checked)+label:before {
+                    border-color: $main_design;
+                }
+                &:checked+label:after {
+                    background: $main_design;
+                    border-color: $main_design;
+                }
+            }
+            #dev {
+                &:not(:checked)+label:before {
+                    border-color: $main_dev;
+                }
+                &:checked+label:after {
+                    background: $main_dev;
+                    border-color: $main_dev;
+                }
+            }
+            #res {
+                &:not(:checked)+label:before {
+                    border-color: $main_res;
+                }
+                &:checked+label:after {
+                    background: $main_res;
+                    border-color: $main_res;
+                }
+            }
+            #other {
+                &:not(:checked)+label:before {
+                    border-color: $footer;
+                }
+                &:checked+label:after {
+                    background: $footer;
+                    border-color: $footer;
+                }
+            }
+            .btn-contact {
+                @include border-radius(50px);
+                position: absolute;
+                right: 30px;
+                bottom: 10px;
+                background: $footer;
+                font-family: 'gilroy-light';
+                text-transform: capitalize;
+                font-size: 0.85em;
             }
         }
         .contactCoord {
+            background-color: $footer;
             padding: 60px;
             color: #FFF;
             .coordTitle {
@@ -40,7 +97,7 @@
                     border-bottom: 1px solid #FFF;
                     padding-bottom: 30px;
                     font-family: 'gilroy-light';
-                    font-size: 1em;
+                    font-size: 1.125em;
                 }
             }
             .coordIcon {

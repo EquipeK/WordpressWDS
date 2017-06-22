@@ -7,24 +7,75 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
+
+                <!-- STEP 1 -->
+
                 <div class="card cardContact">
                     <div class="card-content contactContent">
                         <div class="col m8 contactForm">
                             <span class="card-title">Nous contacter</span>
 
-                            <div class="contactTitle left"><h3>Vos coordonées</h3></div>
-                            <div class="contactStep right"><p>2/3</p></div>
+                            <div class="contactTitle left"><h3>Je suis intéressé par</h3></div>
+                            <div class="contactStep right"><p>1/3</p></div>
                             <div class="clearfix"></div>
 
-                            <?php while (have_posts()) : the_post(); ?>
+
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <p>
+                                                <input name="group1" type="radio" id="market" />
+                                                <label for="market">Bac +2 Marketing Digital</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <p>
+                                                <input name="group1" type="radio" id="design" />
+                                                <label for="design">Mastère 1 Design Graphique</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <p>
+                                                <input name="group1" type="radio" id="dev" />
+                                                <label for="dev">Mastère 1 Développement</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <p>
+                                                <input name="group1" type="radio" id="res" />
+                                                <label for="res">Mastère 1 Système & Réseau</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <p>
+                                                <input name="group1" type="radio" id="other" />
+                                                <label for="other">Autres</label>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn waves-effect waves-light btn-contact">Suivant</button>
+                                </form>
+                            </div>
+
+
+
+
+
+                            <!--<?php while (have_posts()) : the_post(); ?>
 
                                 <div class="entry-content-page">
                                     <?php the_content(); ?>
                                 </div>
 
-                            <?php endwhile; ?>
+                            <?php endwhile; ?>-->
                         </div>
-                        <div class="col m4 contactCoord contactCoordDev">
+                        <div class="col m4 contactCoord ">
                             <div class="coordTitle">
                                 <h3>Nos coordonnées</h3>
                             </div>
@@ -64,6 +115,9 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </div>
