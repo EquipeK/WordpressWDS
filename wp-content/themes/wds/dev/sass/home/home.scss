@@ -115,7 +115,7 @@ p#cf7_controls {
 
 #cf7 {
   position:relative;
-  height:900px;
+  height:700px;
   width:100%;
   margin:0 auto 10px;
   color:#fafafa;
@@ -123,7 +123,7 @@ p#cf7_controls {
 #cf7 img {
   position:absolute;
   padding-top: 50px;
-  right:15%;
+  right:9%;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -139,8 +139,70 @@ p#cf7_controls {
   filter: alpha(opacity=1);
 }
 
+#cf7_controls
+{
+  position: absolute;
+  top:300px;
+}
+
+#cf7_controls li
+{
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+  position: relative;
+  width: 250px;
+  height: 42px;
+  cursor: pointer;
+}
+
+#cf7_controls li a {
+	top: 13.5px;
+	left: -30px;
+	width: 15px;
+	height: 15px;
+	outline: none;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
+}
 
 
+#cf7_controls li a::after {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	border-radius: 50%;
+	visibility: hidden;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: rotate(-100deg);
+	transform: rotate(-80deg);
+	-webkit-transform-origin: -200% 50%;
+	transform-origin: -50% -100%;
+	-webkit-transition: -webkit-transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
+	transition: transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
+}
+
+
+
+#cf7_controls li.current a::after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+#cf7_controls li a:hover,
+#cf7_controls li a:focus {
+	background-color: #fff;
+}
 //video
 #front_video
 {
