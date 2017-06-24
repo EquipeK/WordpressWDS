@@ -8,7 +8,32 @@
  */
 
 get_header(); ?>
-
+<style>
+    .home{
+		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
+		background-repeat: no-repeat;
+		background-size:100%;
+		min-height:1200px;
+	}
+</style>
+<div id="header">
+    <div id="page home" class="site home">
+        <header role="banner" >
+            <div class="navbar-fixed">
+                <nav class="nav">
+                    <div class="nav-wrapper">
+                        <a class="a-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png"/></a>
+                        <?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
+                    </div>
+                </nav>
+            </div>
+            <div class="site-branding">
+                <?php dynamic_sidebar( 'sidebar-head' );  ?>
+                <a class="btn btn_md" style="margin-top: 7%;">Je m'inscris</a>
+            </div>
+        </header>
+    </div>
+</div>
     <div id="front_formations" style="min-height:800px; padding-top:100px;">
         <div id="cf7" class="shadow">
             <div class="row" style="min-height:400px">
@@ -183,5 +208,19 @@ get_header(); ?>
             </div>
         </div>
     </div>
+<script>
+    (function(){
+		$(window).scroll(function(){
+            $('div#header').attr('id','header-custom')
+            $('.logo').attr('src', '<?php echo get_template_directory_uri()?>/dev/images/logo-wds-noir.png')
+			if($(window).scrollTop() === 0){
+                $('div#header-custom').attr('id','header')
+                $('.logo').attr('src', '<?php echo get_template_directory_uri()?>/dev/images/logo-hd-blanc.png')
+            }	
+		})
+
+	})(window)
+</script>
 <?php
 get_footer();
+
