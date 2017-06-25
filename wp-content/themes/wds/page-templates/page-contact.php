@@ -1,16 +1,18 @@
 <?php /* Template Name: contact */ ?>
 <?php get_header(); ?>
 
-<style>
-
-</style>
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
-
+            <div class="pagenations" style="display:none">
+                <div class="pagenation page-01 is-active"></div>
+                <div class="pagenation page-02"></div>
+                <div class="pagenation page-03"></div>
+            </div>
+            <form class="main">
                 <!-- STEP 1 -->
-
-                <div class="card cardContact">
+                <div class="block block-01 is-active">
+                    <div class="card cardContact">
                     <div class="card-content contactContent">
                         <div class="col m8 contactForm">
                             <span class="card-title">Nous contacter</span>
@@ -21,7 +23,6 @@
 
 
                             <div class="row">
-                                <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <p>
@@ -59,8 +60,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn waves-effect waves-light btn-contact">Suivant</button>
-                                </form>
+                                    <div class="btn waves-effect waves-light btn-contact button page-02">Suivant</div>
                             </div>
 
 
@@ -114,10 +114,14 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                </div>    
                 </div>
+                
 
                 <!-- STEP 2 -->
-
+                <div class="block block-02">
+                    
+                
                 <div class="card cardContact">
                     <div class="card-content contactContent">
                         <div class="col m8 contactForm">
@@ -129,7 +133,6 @@
 
 
                             <div class="row">
-                                <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s6">
                                              <input id="last_name" type="text" class="validate">
@@ -151,8 +154,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn waves-effect waves-light btn-contact">Suivant</button>
-                                </form>
+                                    <div class="btn waves-effect waves-light btn-contact page-03">Suivant</div>
                             </div>
 
                             <!--<?php while (have_posts()) : the_post(); ?>
@@ -203,9 +205,9 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
+                </div>
                 <!-- STEP 3 -->
-
+                <div class="block block-03">
                 <div class="card cardContact">
                     <div class="card-content contactContent">
                         <div class="col m8 contactForm">
@@ -217,7 +219,7 @@
 
 
                             <div class="row">
-                                <form class="col s12">
+                                
                                     <div class="row">
                                        <div class="input-field col s12">
                                             <textarea id="textarea1" class="materialize-textarea"></textarea>
@@ -225,8 +227,8 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn waves-effect waves-light btn-contact">Suivant</button>
-                                </form>
+                                    <input class="button btn waves-effect waves-light btn-contact" type="submit" name="submit" value="submit">        
+                               
                             </div>
 
                             <!--<?php while (have_posts()) : the_post(); ?>
@@ -277,8 +279,8 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
-
+                </div>
+                </form>
             </div>
         </div>
     </div>
