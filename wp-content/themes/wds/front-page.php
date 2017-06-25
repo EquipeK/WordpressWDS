@@ -108,8 +108,8 @@ get_header(); ?>
             <main id="main" class="site-main" role="main">
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
-            <div class="row" style="max-height:500px;">
-            <div class="col s5 push-s2" style="padding:0;max-height:500px; background-color:#353533">    
+            <div class="row">
+            <div class="col s12 m5 push-m2" style="padding:0;max-height:500px; background-color:#353533">    
                     <?php
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 query_posts('posts_per_page=1');
@@ -128,7 +128,7 @@ get_header(); ?>
                 endif;?>
             </div>
 
-            <div class="col s3 push-s2" style="max-height:500px; padding:0;">
+            <div class="col s12 m3 push-m2" style="max-height:500px; padding:0;">
                 <?php
                 
                 query_posts('posts_per_page=3&offset=1');
@@ -154,16 +154,25 @@ get_header(); ?>
             </main><!-- #main -->
         </div><!-- #primary -->
 
+        <style>
+        @media only screen and (max-width: 600px){
+            #other-block 
+            {
+                display:none !important;
+            }
+        }
+        
+        </style>
         <div id="front_entreprises">
             <div class="row">
-            <div id="purple-block" class="col s4 push-s1">
+            <div id="purple-block" class="col s12 m4 push-m1">
                 <div id="purple-block-text">
                     <h4>ENTREPRISES</h3>
                     <p>Vous recherchez des stagiaires ou <br> des étudiants en alternance</p>
-                    <a class="waves-effect waves-light btn">Je suis une entreprise</a>
+                    <a class="waves-effect waves-light btn">Info entreprise</a>
                 </div>   
             </div>
-            <div id="other-block" class="col s5 push-s1">
+            <div id="other-block" class="col s12 m5 push-m1">
                 <div id="other-block-text">
                     <div>
                         <h5>test</h5>
@@ -188,7 +197,8 @@ get_header(); ?>
             </div>
         </div>
     
-        <div id="front_contacts">
+        <div id="front_contacts" class="row">
+        <div class="col l6 s12">
             <div class="item_contact">
                 <h5>SUIVEZ - NOUS</h5>
                 <p>Retrouvez nous sur nos réseaux sociaux</p>
@@ -197,7 +207,9 @@ get_header(); ?>
                     <object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/logo_ig.svg">Your browser does not support SVGs</object>
                     <object type="image/svg+xml" data="<?php echo get_template_directory_uri()?>/dev/images/logo_twi.svg">Your browser does not support SVGs</object>
                 </div>
-            </div>
+            </div>    
+        </div>
+        <div class="col l6 s12">
             <div class="item_contact">
                 <h5>NEWSLETTER</h5>
                 <p>Je m’inscris gratuitement <br> pour ne manquer aucune actualités</p>
@@ -206,6 +218,8 @@ get_header(); ?>
                     <input type="submit" name="" value="Je m'abonne">
                 </form>
             </div>
+        </div>
+
         </div>
     </div>
 <script>

@@ -10,7 +10,7 @@ global $i;
 
 if($i == 1)
 {?>
-	<div class="row" style="margin-bottom:0;">
+	<div class="row" style="margin:0;">
 	<a href="<?php echo get_permalink(); ?>">
 	<div id="article-2" class="col s12" style="max-height:250px;background-color:#efd502; padding:0;">
 		<article style="color:white;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -34,7 +34,7 @@ if($i == 1)
 	<?php 	
 }elseif($i == 2)
 {?>
-	<div class="row" style="margin-bottom:0;">
+	<div class="row" style="margin:0;">
 	<a href="<?php echo get_permalink(); ?>">
 	<div id="article-3" class="col s12" style="max-height:250px; background-color:#07b57a; padding:0;">
 		<article style="color:white;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>

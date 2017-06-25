@@ -10,7 +10,25 @@
  */
 
 ?>
+<style>
+@media only screen and (max-width: 993px){
+.footer-two 
+{
+	flex-direction:column;
+}
 
+#icon_footer 
+{
+	display:none;
+}
+
+.site-info 
+{
+	padding-top:20px;
+}
+
+}
+</style>
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
