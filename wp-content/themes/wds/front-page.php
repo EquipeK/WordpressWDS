@@ -86,7 +86,8 @@ get_header(); ?>
         </div>
     </div>
     
-    <div class="container" style="padding-top:100px">        
+    <div class="container" style="padding-top:100px">
+    <img src="<?php echo get_template_directory_uri()?>/dev/images/barreRM2.png" style="position:absolute; right:0;z-index:-1;"alt="">       
         <div id="front_video" style="height:800px;">
             <div id="ytapiplayer2" style="display:none;"></div>
             <div class="row" id="bloc_video_pres">
@@ -105,6 +106,7 @@ get_header(); ?>
         </div>
 
         <div id="front_primary" class="content-area" style="min-height:730px;">
+        <img src="<?php echo get_template_directory_uri()?>/dev/images/barreJV2.png" style="position:absolute; left:0; z-index:-1;"alt="">       
             <main id="main" class="site-main" role="main">
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
@@ -195,8 +197,8 @@ get_header(); ?>
                 </div>   
             </div>
             </div>
+            <img src="<?php echo get_template_directory_uri()?>/dev/images/barreRM.png" style="position:absolute; right:0;z-index:-1;"alt="">       
         </div>
-    
         <div id="front_contacts" class="row">
         <div class="col l6 s12">
             <div class="item_contact">
@@ -219,7 +221,7 @@ get_header(); ?>
                 </form>
             </div>
         </div>
-
+        <img src="<?php echo get_template_directory_uri()?>/dev/images/barreJV2.png" style="position:absolute; left:0;z-index:-1;max-height:500px;"alt="">       
         </div>
     </div>
 <script>
