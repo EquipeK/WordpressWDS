@@ -34,7 +34,7 @@ get_header(); ?>
         </header>
     </div>
 </div>
-    <div id="front_formations" style="min-height:800px; padding-top:100px;">
+    <div id="front_formations" style="min-height:800px; ">
         <div id="cf7" class="shadow">
             <div class="row" style="min-height:400px">
                 <img class='opaque' id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_md.png" height="600px"  />
@@ -88,13 +88,22 @@ get_header(); ?>
     
     <div class="container" style="padding-top:100px">
     <img src="<?php echo get_template_directory_uri()?>/dev/images/barreRM2.png" style="position:absolute; right:0;z-index:-1;"alt="">       
+        <style>
+        @media only screen and (max-width: 600px){
+            #yellow-block 
+            {
+                opacity:0;
+            }
+        }
+        
+        </style>
         <div id="front_video" style="height:800px;">
             <div id="ytapiplayer2" style="display:none;"></div>
             <div class="row" id="bloc_video_pres">
-                <div class="col s3 push-s3" id="launch_video" style="height:200px; margin-top:200px; cursor:pointer;">
+                <div class="col s11 m6 push-m1" id="launch_video" style="height:200px; margin-top:200px; cursor:pointer;">
                     
                 </div>
-                <div id="yellow-block" class="col s4 push-s4">
+                <div id="yellow-block" class="col s1 m4 push-m2">
                     <div id="yellow-block-text" class="col s9 pull-s3">
                         <img style="width:65%;" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png" alt="">
                         <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions

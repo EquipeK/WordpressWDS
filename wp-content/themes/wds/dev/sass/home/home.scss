@@ -10,7 +10,19 @@
   -o-transition: background-color 1s ease-in-out;
   transition: background-color 1s ease-in-out;
   background-color:$main_market;
+  padding-top:100px;
 }
+@media only screen and (max-width: 700px){
+#front_formations
+{
+  padding-top:0;
+  p
+  {
+    display: none;
+  }
+}
+}
+
 #front_formations .btn {
   background-color: #fafafa;
   padding: 0px 50px;
