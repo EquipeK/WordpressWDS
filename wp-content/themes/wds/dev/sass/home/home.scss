@@ -232,6 +232,11 @@ p#cf7_controls {
     display: flex;
     align-items: center;
     justify-content:center;
+    img 
+    {
+      padding-bottom: 30px;
+      border-bottom: 2px solid white;
+    }
     @media (min-width: 1445px) 
       {
         justify-content:flex-end;
@@ -347,6 +352,12 @@ p#cf7_controls {
 //Entreprises
 #front_entreprises
 {
+
+  h4
+  {
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+  }
   color:$color__text-ondark;
 
   display:flex; 

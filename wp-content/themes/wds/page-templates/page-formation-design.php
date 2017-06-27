@@ -17,11 +17,21 @@
     </section>
 
     <section class="moreInfos">
-
+    
     </section>
 
     <section class="moreActus">
-
+    <div id="formation_entreprises" style="display:block;">
+            <div class="row">
+                <div id="purple-block" class="col s12 m4 push-m6" style="justify-content: center;">
+                    <div id="purple-block-text">
+                        <h4>PORTES OUVERTES</h3>
+                        <p>Tout les mercredis après-midi, dès le <br> mois de février, l'école ouvre ses portes <br> et vous accueille de 14h à 17h.</p>
+                    </div>   
+                </div>
+                
+            </div>
+        </div>
     </section>
 
 
