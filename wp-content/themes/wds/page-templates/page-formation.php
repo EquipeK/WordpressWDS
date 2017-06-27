@@ -13,8 +13,8 @@
 			<section style="margin-top:150px">
 				<div class="container" id="page-content">
 					<img src="<?php echo get_template_directory_uri()?>/dev/images/barreRMleft.png" style="position:absolute; left:0; z-index:-1;"alt="">
-						<article class="center-block" style="width:70%;">
-							<h4 class="center-block" style="text-transform:uppercase; font-wight:bolder">Web Digital School : l'école du numérique</h4>
+						<article class="center-block" style="min-height:250px;">
+							<h4 class="center-block" style="text-transform:uppercase; font-weight:bolder; text-align:center;">Web Digital School : l'école du numérique</h4>
 							<div class="center-block center" style="width: 65%;margin-top:10%">
 								<p>Des formations professionnelles pour devenir un expert reconnu.<br/>Du BAC + 2 au BAC + 5</p>
 								<p>Web Digital School est une école supérieur privée en informatique plébiscité par la qualité de son enseignement en alternance, en initial ou en continue </p>

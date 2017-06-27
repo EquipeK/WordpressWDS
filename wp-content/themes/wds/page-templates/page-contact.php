@@ -19,7 +19,7 @@
                 <div class="block block-01 is-active">
                     <div class="card cardContact">
                     <div class="card-content contactContent">
-                        <div class="col m8 contactForm">
+                        <div class="col s12 m8 contactForm">
                             <span class="card-title">Nous contacter</span>
 
                             <div class="contactTitle left"><h3>Je suis intéressé par</h3></div>
@@ -80,7 +80,7 @@
 
                             <?php endwhile; ?>-->
                         </div>
-                        <div class="col m4 contactCoord ">
+                        <div class="col s12 m4 contactCoord ">
                             <div class="coordTitle">
                                 <h3>Nos coordonnées</h3>
                             </div>
@@ -129,7 +129,7 @@
                 
                 <div class="card cardContact">
                     <div class="card-content contactContent">
-                        <div class="col m8 contactForm">
+                        <div class="col s12 m8 contactForm">
                             <span class="card-title">Nous contacter</span>
 
                             <div class="contactTitle left"><h3>Vos coordonées</h3></div>
@@ -170,7 +170,7 @@
 
                             <?php endwhile; ?>-->
                         </div>
-                        <div class="col m4 contactCoord ">
+                        <div class="col s12 m4 contactCoord ">
                             <div class="coordTitle">
                                 <h3>Nos coordonnées</h3>
                             </div>
@@ -215,7 +215,7 @@
                 <div class="block block-03">
                 <div class="card cardContact">
                     <div class="card-content contactContent">
-                        <div class="col m8 contactForm">
+                        <div class="col s12 m8 contactForm">
                             <span class="card-title">Nous contacter</span>
 
                             <div class="contactTitle left"><h3>Votre message</h3></div>
@@ -244,7 +244,7 @@
 
                             <?php endwhile; ?>-->
                         </div>
-                        <div class="col m4 contactCoord ">
+                        <div class="col s12 m4 contactCoord ">
                             <div class="coordTitle">
                                 <h3>Nos coordonnées</h3>
                             </div>

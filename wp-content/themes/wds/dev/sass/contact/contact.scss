@@ -10,7 +10,10 @@
         padding: 0 !important;
         .contactForm {
             position: relative;
-            padding: 60px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
             .card-title {
                 font-family: 'gilroy-extrabold';
                 margin-bottom: 35px;
@@ -113,7 +116,10 @@
         }
         .contactCoord {
             background-color: $footer;
-            padding: 60px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 55px;
+            padding-right: 55px;
             color: #FFF;
             .coordTitle {
                 margin-bottom: 30px;
@@ -207,9 +213,24 @@
 }
 .main {
   height: 600px;
-  width: 1300px;
-/*  overflow: hidden;
-*/  position: relative;
+  /*width: 1300px;
+  overflow: hidden;*/  
+  position: relative;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1400px){
+.cardContact .contactContent .contactCoord
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+
+@media only screen and (max-width: 800px){
+.contactCoord
+{
+    display: none;
+}
 }
