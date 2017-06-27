@@ -1,5 +1,6 @@
 @import "../variables-site/colors";
 @import "../mixins/mixins-master";
+<<<<<<< Updated upstream
 
 //alternance
 
@@ -53,4 +54,34 @@
       width:80%;
     }    
   }
+=======
+.whatThis {
+    padding-top: 100px;
+    background-color: #FFF;
+    .whatThisCard {
+        -moz-box-shadow: 5px 5px 10px 0px #656565;
+        -webkit-box-shadow: 5px 5px 10px 0px #656565;
+        -o-box-shadow: 5px 5px 10px 0px #656565;
+        box-shadow: 5px 5px 10px 0px #656565;
+    }
+    .whatThisImg {
+        position: relative;
+        padding: 0;
+    }
+    .whatThisTitle {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 50%;
+        text-align: center;
+        h2 {
+            font-family: 'gilroy-extrabold';
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 1.850em;
+            line-height: 45px;
+            letter-spacing: 3px;
+        }
+    }
+>>>>>>> Stashed changes
 }

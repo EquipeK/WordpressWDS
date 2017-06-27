@@ -10,6 +10,18 @@
 
     <section class="whatThis">
 
+        <div class="container">
+            <div class="row whatThisCard">
+                <div class="col m3 whatThisImg">
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/DG1.png" alt="" class="responsive-img">
+                    <div class="whatThisTitle"><h2>Le design graphique c'est<br />quoi</h2></div>
+                </div>
+                <div class="col m9">
+                    bla bla bla
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="tags">
