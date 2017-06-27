@@ -1,13 +1,32 @@
 @import "../variables-site/colors";
 @import "../mixins/mixins-master";
 
+//alternance
 
+#btn-alternance
+    {
+        border-radius: 50px;
+        background-color: $main_design;
+        color: white;
+    }
+
+    #bloc-alternance
+    {
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-align-last:center;
+        justify-content: space-around;
+    }
 
 //Entreprises
 #formation_entreprises
 {
   color:$color__text-ondark;
   margin-bottom:150px;
+  margin-bottom:100px;
   background-image: url('./dev/images/DG3.jpg');
   background-repeat: no-repeat;
   background-position: center; 
