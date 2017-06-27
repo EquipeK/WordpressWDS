@@ -3,6 +3,7 @@
 .whatThis {
     padding-top: 100px;
     .whatThisCard {
+        position: relative;
         background-color: #FFF;
         -moz-box-shadow: 5px 5px 10px 0px #656565;
         -webkit-box-shadow: 5px 5px 10px 0px #656565;
@@ -15,8 +16,8 @@
     }
     .whatThisTitle {
         position: absolute;
-        top: 60px;
-        left: 60px;
+        top: 16%;
+        left: 20%;
         width: 50%;
         text-align: center;
         h2 {
@@ -26,6 +27,30 @@
             font-size: 1.850em;
             line-height: 45px;
             letter-spacing: 3px;
+        }
+    }
+    .whatThisContent {
+        padding: 50px;
+        p {
+            margin-bottom: 20px;
+        }
+        span {
+            font-family: 'gilroy-extrabold';
+            color: $main_design;
+        }
+    }
+    .btnDownload {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: $main_design;
+        font-family: 'gilroy-extrabold';
+        text-transform: uppercase;
+        .btnText {
+            padding-right: 20px;
+        }
+        img {
+            margin-top: 10px;
         }
     }
 }
@@ -45,6 +70,14 @@
     text-align: center;
     text-align-last: center;
     justify-content: space-around;
+    p {
+        text-align: justify;
+        /*text-align-last: center;*/
+    }
+    h6 {
+        text-align: center;
+        color: #f93d3d;
+    }
 }
 
 //Entreprises
