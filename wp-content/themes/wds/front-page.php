@@ -120,7 +120,7 @@ get_header(); ?>
             <h5>L'ACTU</h5>
             <p>Retrouvez toutes les actus de l'école</p>
             <div class="row">
-            <div class="col s12 m5 push-m2" style="padding:0;max-height:500px; background-color:#353533">    
+            <div class="col s12 m7 l5 push-l2" style="padding:0;max-height:500px; background-color:#353533">    
                     <?php
                 // VOIR POUR CHARGER PLUS QUE 3 A LOAD SI CLICK FLECHE
                 query_posts('posts_per_page=1');
@@ -139,7 +139,7 @@ get_header(); ?>
                 endif;?>
             </div>
 
-            <div class="col s12 m3 push-m2" style="max-height:500px; padding:0;">
+            <div class="col s12 m5 l3 push-l2" style="max-height:500px; padding:0;">
                 <?php
                 
                 query_posts('posts_per_page=3&offset=1');

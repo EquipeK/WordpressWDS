@@ -253,6 +253,7 @@ p#cf7_controls {
         border-radius:50px;
         background-color:white;
         color:$main_res;
+        min-height: 35px;
         &:hover
         {
           background-color:$color__border-button-hover;
