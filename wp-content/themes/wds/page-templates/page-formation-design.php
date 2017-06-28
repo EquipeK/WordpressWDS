@@ -30,8 +30,30 @@
 
     </section>
 
-    <section class="tags">
-
+    <section class="formationTags">
+        <div id="cf7" class="shadow">
+            <div class="row">
+                <ul id="cf7_controls">
+                    <li id="btn_objectif" class="current">Objectifs</li>
+                    <li id="btn_matiere">Matières</li>
+                    <li id="btn_debouche">Débouchés</li>
+                </ul>
+            </div>
+            <div class="row" style="right:15%">
+                <div id="content_objectif" class="txt col s7 push-s4">
+                    <h3 class="titre">Marketing Digital</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                </div>
+                <div id="content_matiere" class="txt col s7 push-s4">
+                    <h3 class="titre">Design Graphique</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                </div>
+                <div id="content_debouche" class="txt col s7 push-s4">
+                    <h3 class="titre">Développement web</h2>
+                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites<br /> Web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel<br /> afin de devenir les nouveaux acteurs du webdesign.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="moreInfos" style="min-height:500px">
