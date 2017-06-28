@@ -79,10 +79,16 @@ get_header(); ?>
         #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)
         {
             background-color:transparent;
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 1000ms linear;
         }
         #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)>a
         {
             color:black;
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 1000ms linear;
         }
 
     }

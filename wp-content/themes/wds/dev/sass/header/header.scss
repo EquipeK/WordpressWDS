@@ -52,6 +52,7 @@
 	.nav{
 		background-color:rgba(0,0,0,0);
 		box-shadow:none;
+		transition : background-color 1s;
 	}
 	.logo{
 		width:10%;
@@ -109,6 +110,7 @@
 }
 
 #header-custom{
+	transition : all 1s;
 	.img_header{
 		z-index:0;
 	}
@@ -135,9 +137,11 @@
    
 	.menu-menu_nav-container > ul > li:nth-last-child(2) > a {
         color: white;
+		transition: color 1s;
 	}
 	.menu-menu_nav-container > ul > li:nth-last-child(2){
 		background-color:black;
+		transition: background-color 1s;
 	}
 	.menu-menu_nav-container > ul > li > a{
 		color: black;
@@ -161,6 +165,7 @@
 	.nav{
 		background-color: #ffffff;
 		height:100px;
+		transition : background-color 1s;
 	}
 	.logo{
 		width:10%;
