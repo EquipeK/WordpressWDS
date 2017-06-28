@@ -9,11 +9,12 @@
 
 get_header(); ?>
 <style>
-    .home{
+    .site.home{
 		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
 		background-repeat: no-repeat;
 		background-size:cover;
         padding-bottom:150px;
+        overflow:hidden;
 	}
 
     @media only screen and (max-width: 992px)
