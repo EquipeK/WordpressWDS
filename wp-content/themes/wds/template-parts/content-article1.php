@@ -15,7 +15,7 @@
 		<div id="resume_article_gros" class="entry-content resume_article">
 		
 			<?php
-				the_content();
+				the_excerpt()
 			?>
 		
 		</div><!-- .entry-content -->

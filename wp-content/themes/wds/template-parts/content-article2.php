@@ -18,7 +18,7 @@ if($i == 1)
 
 			<div class="entry-content resume_article">
 				<?php
-					the_content();
+					the_excerpt()
 				?>
 			</div><!-- .entry-content -->
 
@@ -42,7 +42,7 @@ if($i == 1)
 
 			<div id="resume_article_bot" class="entry-content resume_article">
 				<?php
-					the_content();
+					the_excerpt()
 				?>
 			</div><!-- .entry-content -->
 
