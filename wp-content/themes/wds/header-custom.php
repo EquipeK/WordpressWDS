@@ -21,13 +21,15 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="header-custom">
-    <div id="page home" class="site home">
+    <div id="page home">
         <header role="banner" >
             <div class="navbar-fixed">
                 <nav class="nav">
                     <div class="nav-wrapper">
                         <a class="a-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/logo-wds-noir.png"/></a>
+                        <a href="#" data-activates="mobile-demo" style="float:right;" class="button-collapse"><img id="burger" src="<?php echo get_template_directory_uri()?>/dev/images/icon_burger.png"/></a>
                         <?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
+                        <?php wp_nav_menu( array('menu_class' => 'side-nav', 'menu_id' => 'mobile-demo' ) ); ?>
                     </div>
                 </nav>
             </div>
@@ -36,9 +38,8 @@
 </div>
 <div id="content" class="site-content">
 <script>
- (function(){
-		$(window).scroll(function(){
-		})
 
-	})(window)
+$( document ).ready(function(){
+         $(".button-collapse").sideNav();
+});
 </script>

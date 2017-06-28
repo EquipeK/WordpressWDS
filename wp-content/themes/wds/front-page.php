@@ -8,96 +8,7 @@
  */
 
 get_header(); ?>
-<style>
-    .site.home{
-		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
-		background-repeat: no-repeat;
-		background-size:cover;
-        padding-bottom:150px;
-        overflow:hidden;
-	}
 
-    @media only screen and (max-width: 992px)
-    {
-        #header .menu-menu_nav-container>ul>li
-        {
-            width:100%;
-            padding-top:60px;
-        }
-
-        .side-nav li>a
-        {
-            height:60px;
-            font-weight:bold;
-        }
-
-        #header .side-nav li>a:hover
-        {
-            background-color:#fafafa;
-        }
-
-        #header .menu-menu_nav-container
-        {
-            width:100%;
-        }
-
-        #sidenav-overlay
-        {
-            z-index:0;
-        }
-    }
-
-    @media only screen and (max-width: 992px)
-    {
-        #header-custom .menu-menu_nav-container>ul>li
-        {
-            width:100%;
-            padding-top:60px;
-            height:auto;
-        }
-
-        #header-custom .side-nav li>a:hover
-        {
-            background-color:#fafafa;
-        }
-
-        #header-custom .menu-menu_nav-container
-        {
-            width:100%;
-        }
-
-        #header-custom .menu-menu_nav-container>ul
-        {
-            height:100%;
-        }
-        #header-custom .navbar-fixed
-        {
-            position: fixed;
-            top: 0;
-        }
-        
-        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)
-        {
-            background-color:transparent;
-            -webkit-transition: background-color 1000ms linear;
-            -ms-transition: background-color 1000ms linear;
-            transition: background-color 1000ms linear;
-        }
-        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)>a
-        {
-            color:black;
-            -webkit-transition: background-color 1000ms linear;
-            -ms-transition: background-color 1000ms linear;
-            transition: background-color 1000ms linear;
-        }
-
-    }
-</style>
-<script>
-    $( document ).ready(function(){
-         $(".button-collapse").sideNav();
-    });
-</script>
 <div id="header">
     <div id="page home" class="site home">
         <header role="banner" >
@@ -127,16 +38,6 @@ get_header(); ?>
                 <img id="diapo" src="<?php echo get_template_directory_uri()?>/dev/images/bg_sr.png" height="600px" />
 
                 <h2 class="formation">Nos Formations</h2>
-
-                <!--<div id="menu" class="menu">
-                    <p id="cf7_controls">
-                        <span id="btn_md" class="selected"><a href="#"></a>Bac +2 Marketing Digital <br /></span>
-                        <span id="btn_dg">Mastère 1 Design Graphique <br /></span>                        
-                        <span id="btn_d">Mastère 1 Développement <br /></span>
-                        <span id="btn_sr" >Mastère 1 Système & Réseau <br /></span>
-                    </p>
-                </div>-->
-
                 
                 <ul id="cf7_controls" class="dotstyle dotstyle-hop">
                     <li id="btn_md" class="selected current"><a class="myLinks"></a>Bac +2 Marketing Digital</li>
@@ -328,8 +229,10 @@ get_header(); ?>
             }	
 		})
 
-	})(window)
+	})(window);
+    $( document ).ready(function(){
+         $(".button-collapse").sideNav();
+    });
 </script>
 <?php
 get_footer();
-
