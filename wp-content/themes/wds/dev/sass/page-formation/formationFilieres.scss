@@ -101,6 +101,14 @@
             color: #FFF;
         }
     }
+    #content_objectif,
+    #content_matiere,
+    #content_debouche {
+        .titre {
+            font-size: 1.125em;
+            text-align: center;
+        }
+    }
 }
 
 #bloc-alternance {
