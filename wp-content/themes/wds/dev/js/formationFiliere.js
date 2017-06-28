@@ -1,22 +1,22 @@
 $(document).ready(function() {
-    $('#content_objectif').show();
+    $('#content_objectif').fadeIn(700);
     $('#content_matiere').hide();
     $('#content_debouche').hide();
 
     $('#btn_objectif').click(function() {
-        $('#content_objectif').show();
+        $('#content_objectif').fadeIn(700);
         $('#content_matiere').hide();
         $('#content_debouche').hide();
     });
     $('#btn_matiere').click(function() {
         $('#content_objectif').hide();
-        $('#content_matiere').show();
+        $('#content_matiere').fadeIn(700);
         $('#content_debouche').hide();
     });
     $('#btn_debouche').click(function() {
         $('#content_objectif').hide();
         $('#content_matiere').hide();
-        $('#content_debouche').show();
+        $('#content_debouche').fadeIn(700);
     });
     /*Changement d'image*/
     $("#cf7_controls").on('click', 'li', function() {

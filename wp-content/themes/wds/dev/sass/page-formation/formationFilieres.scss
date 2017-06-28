@@ -63,13 +63,14 @@
 }
 
 .formationTags {
+    margin: 80px 0;
     background: $main_design;
-    min-height: 550px;
+    min-height: 650px;
     #cf7 {
         height: auto;
     }
     #cf7_controls {
-        top: 100px;
+        top: 140px;
     }
     ul {
         margin: 0;
@@ -104,9 +105,32 @@
     #content_objectif,
     #content_matiere,
     #content_debouche {
+        text-align: center;
         .titre {
             font-size: 1.125em;
-            text-align: center;
+        }
+    }
+    #cf7 img {
+        opacity: 1;
+        margin-top: 30px;
+        position: inherit;
+        right: auto;
+    }
+    .obj {
+        margin-top: 60px;
+        li {
+            background: none;
+            width: auto;
+            height: 30px;
+            margin: 30px 0;
+            color: #FFF;
+            text-align: left;
+            font-size: 0.813em;
+            letter-spacing: 0.1em;
+        }
+        .objCheck {
+            display: inline-block;
+            margin-right: 20px;
         }
     }
 }

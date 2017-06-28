@@ -42,15 +42,22 @@
             <div class="row" style="right:15%">
                 <div id="content_objectif" class="txt col s9 push-s2">
                     <h3 class="titre">Les objectifs</h2>
-                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <ul class="obj">
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Maîtriser les bases de la PAO (Publication Assistée par Ordinateur) et de la création graphique multimédia.</li>
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Pouvoir réaliser un site Web dans son intégralité, jusqu'à son intégration finale.</li>
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Savoir gérer un projet, seul ou en équipe.</li>
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Comprendre les concepts de design d’interface (UI) ainsi que de l’expérience utilisateur (UX).</li>
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Concevoir et appliquer une charte graphique.</li>
+                        <li><div class="objCheck"><img src="<?php echo get_template_directory_uri()?>/dev/images/iconeCheck.png" alt=""></div> Savoir rédiger et tenir une discussion en anglais.</li>
+                    </ul>
                 </div>
                 <div id="content_matiere" class="txt col s9 push-s2">
-                    <h3 class="titre">Design Graphique</h2>
-                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <h3 class="titre">Les Matières Enseignées </h2>
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/matieres_design.png" alt="Design Matières" class="responsive-img">
                 </div>
                 <div id="content_debouche" class="txt col s9 push-s2">
-                    <h3 class="titre">Développement web</h2>
-                    <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites<br /> Web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel<br /> afin de devenir les nouveaux acteurs du webdesign.</p>
+                    <h3 class="titre">Les Débouchés</h2>
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/tags_design.png" alt="Design Débouchés" class="responsive-img">
                 </div>
             </div>
         </div>
