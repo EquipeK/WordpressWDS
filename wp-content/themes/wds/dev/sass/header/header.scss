@@ -9,6 +9,11 @@
 		width:65%;
 		margin-top:1.5%;
 	}
+	@media (max-width: 1060px) {
+	.menu-menu_nav-container{
+		width:80%;
+	}
+	}
 	.menu-menu_nav-container > ul > li{
 		text-align:center;
 		width:20%;
@@ -57,6 +62,7 @@
 		text-transform:uppercase;
 		font-weight:bold;
 		margin:0;
+		letter-spacing: 5px;
 	}
 	.site-branding{
 		color:white;
@@ -165,6 +171,7 @@
 		text-transform:uppercase;
 		font-weight:bold;
 		margin:0;
+		letter-spacing: 5px;
 	}
 	.site-branding{
 		color:white;

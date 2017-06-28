@@ -12,10 +12,85 @@ get_header(); ?>
     .home{
 		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
 		background-repeat: no-repeat;
-		background-size:100%;
-		min-height:1200px;
+		background-size:cover;
+        padding-bottom:150px;
 	}
+
+    @media only screen and (max-width: 992px)
+    {
+        #header .menu-menu_nav-container>ul>li
+        {
+            width:100%;
+            padding-top:60px;
+        }
+
+        .side-nav li>a
+        {
+            height:60px;
+            font-weight:bold;
+        }
+
+        #header .side-nav li>a:hover
+        {
+            background-color:#fafafa;
+        }
+
+        #header .menu-menu_nav-container
+        {
+            width:100%;
+        }
+
+        #sidenav-overlay
+        {
+            z-index:0;
+        }
+    }
+
+    @media only screen and (max-width: 992px)
+    {
+        #header-custom .menu-menu_nav-container>ul>li
+        {
+            width:100%;
+            padding-top:60px;
+            height:auto;
+        }
+
+        #header-custom .side-nav li>a:hover
+        {
+            background-color:#fafafa;
+        }
+
+        #header-custom .menu-menu_nav-container
+        {
+            width:100%;
+        }
+
+        #header-custom .menu-menu_nav-container>ul
+        {
+            height:100%;
+        }
+        #header-custom .navbar-fixed
+        {
+            position: fixed;
+            top: 0;
+        }
+        
+        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)
+        {
+            background-color:transparent;
+        }
+        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)>a
+        {
+            color:black;
+        }
+
+    }
 </style>
+<script>
+    $( document ).ready(function(){
+         $(".button-collapse").sideNav();
+    });
+</script>
 <div id="header">
     <div id="page home" class="site home">
         <header role="banner" >
@@ -23,7 +98,9 @@ get_header(); ?>
                 <nav class="nav">
                     <div class="nav-wrapper">
                         <a class="a-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png"/></a>
+                        <a href="#" data-activates="mobile-demo" style="float:right;" class="button-collapse"><img id="burger" src="<?php echo get_template_directory_uri()?>/dev/images/icon_burger.png"/></a>
                         <?php wp_nav_menu( array('menu_class' => 'hide-on-med-and-down' ) ); ?>
+                        <?php wp_nav_menu( array('menu_class' => 'side-nav', 'menu_id' => 'mobile-demo' ) ); ?>
                     </div>
                 </nav>
             </div>
