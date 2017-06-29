@@ -23,9 +23,11 @@
                         <span class="formationDesignTxt">Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
                     </p>
                 </div>
-                <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">
-                    <span class="btnText">Télécharger la plaquette</span>
-                    <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt="">
+                <div class="btnDownload" style="height:200px; bottom:-140px;">
+                    <div  id="slider-formation">
+                        <span class="btnText">Télécharger la plaquette</span> 
+                        <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt="">
+                    </div>
                     <div id="sliding" style="display:none; padding-top:20px">
                     <form id="form_contact" style="width:100%;">
                         <input type="email" name="email_newsletter" value="" placeholder="adresse email">
