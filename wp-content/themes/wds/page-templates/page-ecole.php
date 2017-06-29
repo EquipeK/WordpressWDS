@@ -184,7 +184,7 @@
 			        <div class="card-content" style="text-align:center;">
 			          <p class="text-download" style="">Télécharger notre plaquette</p>
 			          <input placeholder="Adresse mail" id="mail_visitor" type="text">
-			          <a href="#"><image src="<?php echo get_template_directory_uri()?>/dev/images/btn_newsletter.png" /></a>
+			          <a href="<?php echo esc_url( home_url( '/' ) ); ?>inscriptions"><image src="<?php echo get_template_directory_uri()?>/dev/images/btn_newsletter.png" /></a>
 			        </div>
 			      </div>
 			    </div>

@@ -79,7 +79,7 @@
                 <div class="col s12 m5 push-m7" id="bloc-alternance">
                     <h6 class="formationMarketBGTxt">EN SAVOIR PLUS SUR L'ALTERNANCE</h6>
                     <p>Retrouver les informations sur l'alternance sur notre page Alternance</p>
-                    <a class="waves-effect waves-light btn formationMarketBG" id="btn-alternance">Alternance</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>alternance" class="waves-effect waves-light btn formationMarketBG" id="btn-alternance">Alternance</a>
                 </div>
             </div>
             <img src="<?php echo get_template_directory_uri()?>/dev/images/DG2.png" style="position:absolute; left:0; z-index:-1;" alt="" class="hide-on-small-only">

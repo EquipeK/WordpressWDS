@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
             <div class="site-branding">
                 <?php dynamic_sidebar( 'sidebar-head' );  ?>
-                <a class="btn btn_md" style="margin-top: 7%;">Je m'inscris</a>
+                <a class="btn btn_md" href="<?php echo esc_url( home_url( '/' ) ); ?>inscriptions" style="margin-top: 7%;">Je m'inscris</a>
             </div>
         </header>
     </div>
@@ -50,22 +50,22 @@ get_header(); ?>
                 <div id="txt_dev" class="txt col s7 push-s4">
                     <h3 class="titre">Développement web</h2>
                     <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites<br /> Web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel<br /> afin de devenir les nouveaux acteurs du webdesign.</p>
-                    <a class="btn btn_d" href="">Découvrez</a>
+                    <a class="btn btn_d" href="<?php echo esc_url( home_url( '/' ) ); ?>formation-developpement">Découvrez</a>
                 </div>
                 <div id="txt_sr" class="txt col s7 push-s4">
                     <h3 class="titre">Systèmes et Réseaux</h2>
                     <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
-                    <a class="btn btn_sr" href="">Découvrez</a>
+                    <a class="btn btn_sr" href="<?php echo esc_url( home_url( '/' ) ); ?>formation-systeme-et-reseau">Découvrez</a>
                 </div>
                 <div id="txt_md" class="txt col s7 push-s4">
                     <h3 class="titre">Marketing Digital</h2>
                     <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
-                    <a class="btn btn_md" href="">Découvrez</a>
+                    <a class="btn btn_md" href="<?php echo esc_url( home_url( '/' ) ); ?>formation-market">Découvrez</a>
                 </div>
                 <div id="txt_dg" class="txt col s7 push-s4">
                     <h3 class="titre">Design Graphique</h2>
                     <p>Vous serez formés à la conception de supports de communication et à la réalisation de sites web, tout en respectant les standards pour une insertion efficace dans le milieu professionnel afin de devenir les nouveaux acteurs du webdesign.</p>
-                    <a class="btn btn_dg" href="">Découvrez</a>
+                    <a class="btn btn_dg" href="<?php echo esc_url( home_url( '/' ) ); ?>formation-design">Découvrez</a>
                 </div>
             </div>           
         </div>
@@ -93,7 +93,7 @@ get_header(); ?>
                         <img style="width:65%;" src="<?php echo get_template_directory_uri()?>/dev/images/blanc.png" alt="">
                         <p>L'école est située à Brest, sur le port de plaisance du Moulin Blanc. Nous avons la chance de vous proposer les meilleurs conditions
                         d'apprentissage à Brest grâce à la vue imprenable que vous avez depuis les salles de cours.</p>
-                        <a class="waves-effect waves-light btn">Voir +</a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>ecole" class="waves-effect waves-light btn">Voir +</a>
                     </div>
                 </div>
             </div>   
@@ -165,7 +165,7 @@ get_header(); ?>
                 <div id="purple-block-text">
                     <h4>ENTREPRISES</h3>
                     <p>Vous recherchez des stagiaires ou <br> des étudiants en alternance</p>
-                    <a class="waves-effect waves-light btn">Info entreprise</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>alternance" class="waves-effect waves-light btn">Info entreprise</a>
                 </div>   
             </div>
             <div id="other-block" class="col s12 m5 push-m1">
