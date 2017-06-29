@@ -1,10 +1,8 @@
 <?php /* Template Name: FormationDev */ ?>
 
 <?php get_header('custom'); ?>
-    <div style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
-		<div style="margin-top:100px">
-			<span style="padding:25px 30px 25px 30px; border:solid 1px black; border-top-right-radius:50px; border-bottom-right-radius:50px; font-size:1.2em"><?php echo get_the_title(); ?></span>
-		</div>
+    <div id="bandeau-DEV" class="bandeau"  style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
+		
 	</div>
 
     <section class="whatThis">
@@ -12,7 +10,7 @@
         <div class="container">
             <div class="row whatThisCard">
                 <div class="col m3 whatThisImg">
-                    <img src="<?php echo get_template_directory_uri()?>/dev/images/DG1.png" alt="" class="responsive-img">
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/dev_quoi.png" alt="" class="responsive-img">
                 </div>
                 <div class="col m9 whatThisContent">
                     <p>
@@ -62,11 +60,11 @@
                 </div>
                 <div id="content_matiere" class="txt col m9 push-m2 s12">
                     <h3 class="titre">Les Matières Enseignées </h2>
-                    <img src="<?php echo get_template_directory_uri()?>/dev/images/matieres_design.png" alt="Design Matières" class="responsive-img">
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/matieres_dev.jpg" alt="Dev Matières" class="responsive-img">
                 </div>
                 <div id="content_debouche" class="txt col m9 push-m2 s12">
                     <h3 class="titre">Les Débouchés</h2>
-                    <img src="<?php echo get_template_directory_uri()?>/dev/images/tags_design.png" alt="Design Débouchés" class="responsive-img">
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/nuages_dev.jpg" alt="Dev Débouchés" class="responsive-img">
                 </div>
             </div>
         </div>
