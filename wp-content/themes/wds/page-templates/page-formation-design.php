@@ -70,6 +70,7 @@
                 </div>
             </div>
         </div>
+        <div class="formationTagsBars hide-on-small-only"><img src="<?php echo get_template_directory_uri()?>/dev/images/barre_blanche.png" alt=""></div>
     </section>
 
     <section class="moreInfos" style="min-height:500px">
