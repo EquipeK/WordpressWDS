@@ -508,3 +508,35 @@ p#cf7_controls {
     color: $color__text-main;
   }
 }
+
+.bandeau
+{
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+
+#bandeau-ecole
+{
+    background-image: url('./dev/images/header_ecole.jpg');
+}
+
+#bandeau-alternance
+{
+    background-image: url('./dev/images/header_alternance.jpg');
+}
+
+#bandeau-form
+{
+    background-image: url('./dev/images/header_form.jpg');
+}
+
+#bandeau-DG
+{
+    background-image: url('./dev/images/header_DG.jpg');
+}
+
+#bandeau-contact
+{
+    background-image: url('./dev/images/header_contact.jpg');
+}

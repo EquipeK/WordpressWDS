@@ -5,10 +5,8 @@
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
-				<div style="margin-top:100px">
-					<span style="padding:25px 30px 25px 30px; border:solid 1px black; border-top-right-radius:50px; border-bottom-right-radius:50px; font-size:1.2em"><?php echo get_the_title(); ?></span>
-				</div>
+			<div id="bandeau-form" class="bandeau" style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
+
 			</div>
 			<section style="margin-top:150px">
 				<div class="container" id="page-content">
@@ -20,7 +18,20 @@
 								<p>Web Digital School est une école supérieur privée en informatique plébiscité par la qualité de son enseignement en alternance, en initial ou en continue </p>
 							</div>
 						</article>
-						<img class="center-block" src="<?php echo get_template_directory_uri()?>/dev/images/puceformation.jpeg" alt="" style="width:120% !important; margin-top:10%">
+						<div class="row">
+							<div class="col s12 m6 l3 ">
+								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/marketing_bulle.png" alt="">
+							</div>
+							<div class="col s12 m6 l3 ">
+								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/design_bulle.png" alt="">
+							</div>
+							<div class="col s12 m6 l3 ">
+								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/dev_bulle.png" alt="">
+							</div>
+							<div class="col s12 m6 l3 ">
+								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/reseau_bulle.png" alt="">
+							</div>
+						</div>
 						<article class="center-block" style="width:70%;">
 							<div class="center-block" style="width: 60%; margin-top:15%; margin-bottom:15%">
 								<p><span style="font-weight:bolder">Après le BAC, </span>Les formations proposé à la Web Digital School sont réalisables selon 3 status, en fonction de votre situation :</p>

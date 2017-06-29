@@ -42,6 +42,7 @@ label {
     white-space: nowrap;
   user-select: none;
   cursor: pointer;
+  color:black;
 }
 
 input, textarea, select {
@@ -190,10 +191,8 @@ input:checked ~ label {
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        <div style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
-				<div style="margin-top:100px">
-					<span style="padding:25px 30px 25px 30px; border:solid 1px black; border-top-right-radius:50px; border-bottom-right-radius:50px; font-size:1.2em"><?php echo get_the_title(); ?></span>
-				</div>
+        <div id="bandeau-contact" class="bandeau" style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
+				
 			</div>
 			<section style="padding-top:50px">
 				<div class="container" id="page-content">

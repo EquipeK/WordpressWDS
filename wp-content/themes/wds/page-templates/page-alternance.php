@@ -15,6 +15,7 @@ h6
     text-align: center;
 }
 
+
 #page-content
 {
     padding-bottom:200px;
@@ -40,11 +41,9 @@ h6
 </style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
-				<div style="margin-top:100px">
-					<span style="padding:25px 30px 25px 30px; border:solid 1px black; border-top-right-radius:50px; border-bottom-right-radius:50px; font-size:1.2em"><?php echo get_the_title(); ?></span>
-				</div>
+			<div id="bandeau-alternance" class="bandeau" style="border:solid 1px black; height:350px; width:100%;margin-top:50px;">
 			</div>
+            <img class="images-side" src="<?php echo get_template_directory_uri()?>/dev/images/red_circle.png" style="position:absolute; right:0; z-index:-1;"alt="">
 			<section style="margin-top:150px">
 				<div class="container" id="page-content">
                 <!-- Passer sur du contenu dynamique ? -->
@@ -78,8 +77,7 @@ h6
                             $('.materialboxed').materialbox();
                         });
                     </script>   
-                        <!-- METTRE BONNE IMAGE -->
-                        <img class="materialboxed responsive-img" src="<?php echo get_template_directory_uri()?>/dev/images/actu_paddle.png" alt="">
+                        <img class="materialboxed responsive-img" src="<?php echo get_template_directory_uri()?>/dev/images/photo_alternance.png" alt="">
                     </div>
                     <img class="images-side" src="<?php echo get_template_directory_uri()?>/dev/images/barreRM.png" style="position:absolute; right:0; z-index:-1;"alt="">
                 </div>	
