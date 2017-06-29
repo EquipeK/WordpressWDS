@@ -5,7 +5,7 @@
     -webkit-box-shadow: 10px 10px 30px 2px #9b9b9b;
     -o-box-shadow: 10px 10px 30px 2px #9b9b9b;
     box-shadow: 10px 10px 30px 2px #9b9b9b;
-    margin : 0;
+    margin: 0;
     .contactContent {
         padding: 0 !important;
         .contactForm {
@@ -169,68 +169,67 @@
     }
 }
 
-
 .block {
- width:100%;
-  transform: translateX(0);
-  transition: transform 900ms;
- position:absolute;
-  opacity: 0;
-  transition: opacity 1200ms;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 900ms;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1200ms;
+    justify-content: center;
+    align-items: center;
 }
 
 .block-01 {
-  z-index: 3;
-/*   transform: translateX(500px); */
+    z-index: 3;
+    /*   transform: translateX(500px); */
 }
+
 .block-02 {
-  z-index: 2;
-/*   transform: translateX(500px); */
+    z-index: 2;
+    /*   transform: translateX(500px); */
 }
+
 .block-03 {
-  z-index: 1;
-/*   transform: translateX(500px); */
+    z-index: 1;
+    /*   transform: translateX(500px); */
 }
 
 .block.is-active {
-    
     z-index: 999;
     opacity: 1;
     transition: opacity 1s;
     animation: slide 600ms forwards;
     transform: translateX(0);
 }
+
 @keyframes slide {
-  0% {
-    transform: translateX(600px);
-  }
-  
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
+
 .main {
-  height: 600px;
-  /*width: 1300px;
-  overflow: hidden;*/  
-  position: relative;
-  margin: 0 auto;
-  border-radius: 5px;
+    height: 600px;
+    /*width: 1300px;
+  overflow: hidden;*/
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-@media only screen and (max-width: 1400px){
-.cardContact .contactContent .contactCoord
-{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+@media only screen and (max-width: 1400px) {
+    .cardContact .contactContent .contactCoord {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-@media only screen and (max-width: 800px){
-.contactCoord
-{
-    display: none;
-}
+@media only screen and (max-width: 800px) {
+    .contactCoord {
+        display: none;
+    }
 }
