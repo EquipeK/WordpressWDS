@@ -42,3 +42,9 @@ $("#Autre").on("click",function()
 {
     $("#sliding").slideToggle(500);
 }); 
+
+
+$("#slider-formation").on("click",function()
+{
+    $("#sliding").slideToggle(500);
+}); 

@@ -24,7 +24,17 @@
                         <span>Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
                     </p>
                 </div>
-                <a href="" class="btnDownload"><span class="btnText">Télécharger la plaquette</span> <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt=""></a>
+                <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">
+                    <span class="btnText">Télécharger la plaquette</span> 
+                    <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt="">
+                    <div id="sliding" style="display:none; padding-top:20px">
+                    <form id="form_contact" style="width:100%;">
+                        <input type="email" name="email_newsletter" value="" placeholder="adresse email">
+                        <input type="submit" name="" value="Recevoir">
+                        </form>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -92,5 +102,16 @@
         </div>
     </section>
 
+<style>
+@keyframes slide {
+  0% {
+    transform: translateX(600px);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+</style>
 
 <?php get_footer(); ?>
