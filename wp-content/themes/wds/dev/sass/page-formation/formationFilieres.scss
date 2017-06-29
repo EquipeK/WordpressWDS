@@ -4,17 +4,37 @@
     background-color: $main_design;
 }
 
-.formationDevBG {}
+.formationDevBG {
+    background-color: $main_dev;
+}
 
-.formationResBG {}
+.formationResBG {
+    background-color: $main_res;
+}
+
+.formationMarketBG {
+    background-color: $main_market;
+}
 
 .formationDesignTxt {
     color: $main_design;
 }
 
-.formationDevBGTxt {}
+.formationDevBGTxt {
+    color: $main_dev;
+}
 
-.formationResBGTxt {}
+.formationResBGTxt {
+    color: $main_res;
+}
+
+.formationMarketBGTxt {
+    color: $main_market;
+}
+
+.formationBlackBGTxt {
+    color: #000 !important;
+}
 
 .whatThis {
     padding-top: 100px;
