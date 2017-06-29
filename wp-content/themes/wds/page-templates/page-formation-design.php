@@ -13,7 +13,6 @@
             <div class="row whatThisCard">
                 <div class="col m3 whatThisImg">
                     <img src="<?php echo get_template_directory_uri()?>/dev/images/DG1.png" alt="" class="responsive-img">
-                    <div class="whatThisTitle"><h2>Le design graphique c'est<br />quoi</h2></div>
                 </div>
                 <div class="col m9 whatThisContent">
                     <p>
@@ -24,11 +23,8 @@
                         <span class="formationDesignTxt">Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
                     </p>
                 </div>
-<<<<<<< HEAD
-                <a href="" class="btnDownload formationDesignTxt"><span class="btnText">Télécharger la plaquette</span> <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt=""></a>
-=======
                 <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">
-                    <span class="btnText">Télécharger la plaquette</span> 
+                    <span class="btnText">Télécharger la plaquette</span>
                     <img src="<?php echo get_template_directory_uri()?>/dev/images/iconeDownload.png" alt="">
                     <div id="sliding" style="display:none; padding-top:20px">
                     <form id="form_contact" style="width:100%;">
@@ -37,8 +33,7 @@
                         </form>
                     </div>
                 </div>
-                
->>>>>>> origin/dev
+
             </div>
         </div>
 
@@ -111,7 +106,7 @@
   0% {
     transform: translateX(600px);
   }
-  
+
   100% {
     transform: translateX(0);
   }
