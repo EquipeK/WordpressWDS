@@ -41,66 +41,38 @@ figure {
 
 @import "tables";
 
-.header-container {
-  color: #5995DA;
-  background-color: #D6E9FE;
-  display: flex;
-  justify-content: center;
-}
+// Header
 
-.header {
-    width: 900px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  /* Add this */
-}
 
-.social,
-.subscribe {
-  align-self: flex-end;
-  margin-bottom: 20px;
-}
 
-.photo-grid-container {
-  display: flex;
-  justify-content: center;
-}
+// Footer
 
-.photo-grid {
-  width: 900px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;  /* <--- Really freaking cool! */
-  align-items: center;
+footer
+{
+	background-color: $footer;
 }
-
-.photo-grid-item {
-  border : none;
-  width: 300px;
-  height: 300px;
-}
-
 .site-info {
   display: flex;
   justify-content: space-between;
 }
 
 .footer-item {
-  border: 1px solid #fff;
-  background-color: #D6E9FE;
-  height: 200px;
+  color: white;
+  height: 100px;
   flex: 1;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.footer-three {
-  flex: 2;
+#icon_footer
+{
+  flex:0.5;
 }
 
-.footer-one,
-.footer-three {
-  background-color: #5995DA;
-  flex: initial;
-  width: 300px;
+#comments
+{
+	padding-bottom:45px;
 }
+

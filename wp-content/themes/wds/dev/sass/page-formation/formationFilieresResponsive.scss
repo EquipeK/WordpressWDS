@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1070px) {
+    .formationTags {
+        #cf7_controls {
+            display: none;
+        }
+        .obj {
+            margin-top: 0;
+            li {
+                background: none;
+                width: auto;
+                height: 78px;
+                margin: 0px 0;
+                line-height: 28px;
+                color: #FFF;
+                text-align: left;
+                font-size: 0.813em;
+                letter-spacing: 0.1em;
+            }
+            .objCheck {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        #content_objectif,
+        #content_matiere,
+        #content_debouche {
+            margin: 20px 0;
+            display: block !important;
+        }
+        .formationTagsBars {
+            display: none;
+        }
+    }
+}

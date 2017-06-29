@@ -1,0 +1,50 @@
+@import "../variables-site/colors";
+@import "../mixins/mixins-master";
+
+.ecole-historique
+{
+    h6
+    {
+        z-index: 1;
+    }
+    background-color:$footer;
+    min-height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .row
+    {
+        display:flex;
+    }
+    .bloc-historique
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        min-height: 200px;
+        background-color:$main_dev;
+        color: white;
+        opacity: 0;
+        transition: all 1s;
+    }
+    .bloc-historique:hover
+    {
+        opacity: 1;
+        transition: all 1s;
+    }
+    .fond-historique
+    {
+        position:absolute;
+        width:70%;
+        height: 50px;
+        margin-top: 80px;
+        color:$main_dev;
+    }
+    #ligne-historique
+    {
+        background-color: $main_dev;
+        height: 2px;
+        margin-top: 10px;
+    }
+}

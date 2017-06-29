@@ -1,0 +1,317 @@
+@import "../mixins/mixins-master";
+@import "../variables-site/colors";
+
+
+#header{
+	.img_header{
+		z-index:0;
+	}
+	.menu-menu_nav-container{
+		float:right;
+		width:65%;
+		margin-top:1.5%;
+	}
+	@media (max-width: 1060px) {
+	.menu-menu_nav-container{
+		width:80%;
+	}
+	}
+	.menu-menu_nav-container > ul > li{
+		text-align:center;
+		width:20%;
+	}
+	.menu-menu_nav-container > ul > li > a:hover{
+		color:#fff;
+		background-color:rgba(0,0,0,0);
+		font-weight:bold;
+		color: #07b57a;
+		-webkit-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+	.menu-menu_nav-container > ul > li:nth-last-child(1){
+		border-left: solid 1px white;
+	}
+	.menu-menu_nav-container > ul > li > a{
+		margin-top: -9px;
+    	padding-left: 16px
+	}
+	.menu-line{
+		position: absolute;
+		visibility:hidden;
+		top: 100%;
+		width: 3% !important;
+		height: 2px;
+		margin-left: 5%;
+		margin-top:1%;
+		pointer-events: none;
+		background: #07b57a;
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+		transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+	}
+	.nav{
+		background-color:rgba(0,0,0,0);
+		box-shadow:none;
+		transition : background-color 1s;
+	}
+	.logo{
+		width:10%;
+		margin-left:8%;
+		margin-top:0.1%
+	}
+	.site-title{
+		text-transform:uppercase;
+		font-weight:bold;
+		margin:0;
+		letter-spacing: 5px;
+	}
+	.site-branding{
+		color:white;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		margin-top:16%;
+	}
+	.site-branding > div:nth-last-child(2){
+		margin-top: 7%;
+	}
+	.site-description{
+		margin: 0;
+	}
+	.site-intro{
+		font-weight:bold;
+		margin-top:5%;
+		font-size: x-large;
+	}
+	.btn_header_register{
+		padding:1%;
+		border-radius: 50px;
+		background-color: #07b57a;
+		color: white;
+		border: solid 0px;
+		font-size:large;
+		width:10%;
+		margin-top:6%;
+	}
+	.btn {
+		background-color: #07b57a;
+		padding: 0px 50px;
+		text-decoration: none;
+		text-transform: unset;
+		font-weight: bold;
+		@include border-radius(28px);
+		&:hover
+		{
+			background-color: $main_dev;
+			color : $color__link;
+		}
+	}
+}
+
+#header-custom{
+	transition : all 1s;
+	.img_header{
+		z-index:0;
+	}
+	.menu-menu_nav-container{
+		width:65%;
+		float:right;
+	}
+    .menu-menu_nav-container > ul{
+        height:100px;
+    }
+	.menu-menu_nav-container > ul > li{
+		text-align:center;
+        width:20%;
+		color: black;
+        height:inherit;
+        line-height:100px;
+	}
+	.menu-menu_nav-container > ul > li > a:hover{
+		background-color:rgba(0,0,0,0);
+		font-weight:900;
+		-webkit-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+   
+	.menu-menu_nav-container > ul > li:nth-last-child(2) > a {
+        color: white;
+		transition: color 1s;
+	}
+	.menu-menu_nav-container > ul > li:nth-last-child(2){
+		background-color:black;
+		transition: background-color 1s;
+	}
+	.menu-menu_nav-container > ul > li > a{
+		color: black;
+		height:inherit;
+	}
+	.menu-line{
+		position: absolute;
+		visibility:hidden;
+		top: 75%;
+		width: 3% !important;
+		height: 2px !important;
+		margin-left: 5%;
+		pointer-events: none;
+		background: #000;
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
+		-webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+		transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+	}
+	.nav{
+		background-color: #ffffff;
+		height:100px;
+		transition : background-color 1s;
+	}
+	.logo{
+		width:10%;
+		margin-left:8%;
+		margin-top:0.1%
+	}
+	.site-title{
+		text-transform:uppercase;
+		font-weight:bold;
+		margin:0;
+		letter-spacing: 5px;
+	}
+	.site-branding{
+		color:white;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		margin-top:16%;
+	}
+	.site-branding > div:nth-last-child(2){
+		margin-top: 7%;
+	}
+	.site-description{
+		margin: 0;
+	}
+	.site-intro{
+		font-weight:bold;
+		margin-top:5%;
+		font-size: x-large;
+	}
+	.btn_header_register{
+		padding:1%;
+		border-radius: 50px;
+		background-color: #07b57a;
+		color: white;
+		border: solid 0px;
+		font-size:large;
+		width:10%;
+		margin-top:6%;
+	}
+	.btn {
+		background-color: #07b57a;
+		padding: 0px 50px;
+		text-decoration: none;
+		text-transform: unset;
+		font-weight: bold;
+		@include border-radius(28px);
+		&:hover
+		{
+			background-color: $main_dev;
+			color : $color__link;
+		}
+	}	
+}
+
+.site.home{
+		background-image:url("http://localhost/WordpressWDS/wp-content/themes/wds/dev/images/header_homepage.jpg" );
+		background-repeat: no-repeat;
+		background-size:cover;
+        padding-bottom:150px;
+        overflow:hidden;
+	}
+@media only screen and (max-width: 992px)
+    {
+        #header .menu-menu_nav-container>ul>li
+        {
+            width:100%;
+            padding-top:60px;
+        }
+
+        .side-nav li>a
+        {
+            height:60px;
+            font-weight:bold;
+        }
+
+        #header .side-nav li>a:hover
+        {
+            background-color:#fafafa;
+        }
+
+        #header .menu-menu_nav-container
+        {
+            width:100%;
+        }
+
+
+        #sidenav-overlay
+        {
+            z-index:0;
+        }
+    }
+
+    @media only screen and (max-width: 992px)
+    {
+        #header-custom .menu-menu_nav-container>ul>li
+        {
+            width:100%;
+            padding-top:60px;
+            height:auto;
+        }
+
+        #header-custom .side-nav li>a:hover
+        {
+            background-color:#fafafa;
+        }
+
+        #header-custom .menu-menu_nav-container
+        {
+            width:100%;
+        }
+
+        #header-custom .menu-menu_nav-container>ul
+        {
+            height:100%;
+        }
+        #header-custom .navbar-fixed
+        {
+            position: fixed;
+            top: 0;
+        }
+        
+        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)
+        {
+            background-color:transparent;
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 1000ms linear;
+        }
+        #header-custom .menu-menu_nav-container>ul>li:nth-last-child(2)>a
+        {
+            color:black;
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 1000ms linear;
+        }
+
+    }
+@media (max-width: 1060px) {
+	#header-custom
+	{
+		.menu-menu_nav-container{
+		width:80%;
+		}
+	}
+}
