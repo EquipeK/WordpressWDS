@@ -14,11 +14,13 @@
                 </div>
                 <div class="col m9 whatThisContent">
                     <p>
-                        <span class="formationDevTxt">Le Design Graphique</span> consiste à créer un outil de communication visuelle grâce à différents moyens.
-                        C’est une discipline qui s’applique à de nombreux domaines : illustration, presse, édition, packaging, publicité, design web, motion design, communication d’entreprise, identité visuelle, etc.
+                        <span class="formationDevTxt">Le Développement Web</span> correspond au développement d’une page statique ou dynamique avec 
+                    connexion à une base de données.
                     </p>
                     <p>
-                        <span class="formationDevTxt">Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
+                        <span class="formationDevTxt">Le développeur </span> doit par conséquent savoir utiliser différents langages de 
+                    programmation (PHP, SQL,XHTML /HTML, JavaScript, AJAX, XML, ASP...) ainsi que maîtriser 
+                    de CMS (système de gestion de données «Open Source » ).
                     </p>
                 </div>
                 <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">

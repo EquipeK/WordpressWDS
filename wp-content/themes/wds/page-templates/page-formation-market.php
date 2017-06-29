@@ -14,11 +14,32 @@
                 </div>
                 <div class="col m9 whatThisContent">
                     <p>
-                        <span class="formationMarketBGTxt">Le Design Graphique</span> consiste à créer un outil de communication visuelle grâce à différents moyens.
-                        C’est une discipline qui s’applique à de nombreux domaines : illustration, presse, édition, packaging, publicité, design web, motion design, communication d’entreprise, identité visuelle, etc.
+                        Conscient des opportunités offertes par le e-business
+                            pour développer son chiffre d’affaires et optimiser sa
+                            relation client, <span class="formationMarketBGTxt">le Webmarketeur</span>  détermine les moyens
+                            adéquats pour valoriser l’offre de son entreprise en se
+                            dotant grâce au marketing digital, d’outils d’aide à la
+                            vente innovants et de supports numériques interactifs.
+                            Il développe également une stratégie de distribution
+                            cross-canal.
                     </p>
+
+                    
+
+
                     <p>
-                        <span class="formationMarketBGTxt">Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
+                        Il fidélise et développe le portefeuille de clients en
+                        apportant un conseil personnalisé. Il est le garant de la
+                        qualité de la relation client pour l’entreprise car capable
+                        d’intégrer dans son acte de vente, les conditions
+                        spécifiques liées à l’organisation de la structure.
+                        Au-delà du simple développement du chiffre d’affaires,
+                        il s’efforce, en collaboration avec le service financier de
+                        l’entreprise, d’optimiser la politique tarifaire et la marge.
+                        Il recherche de nouveaux clients et/ou partenaires et
+                        est en mesure de détecter de nouvelles opportunités de
+                        croissance en étant force de proposition sur des projets
+                        innovants.
                     </p>
                 </div>
                 <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">

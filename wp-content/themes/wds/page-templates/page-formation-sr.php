@@ -14,11 +14,15 @@
                 </div>
                 <div class="col m9 whatThisContent">
                     <p>
-                        <span class="formationResBGTxt">Le Design Graphique</span> consiste à créer un outil de communication visuelle grâce à différents moyens.
-                        C’est une discipline qui s’applique à de nombreux domaines : illustration, presse, édition, packaging, publicité, design web, motion design, communication d’entreprise, identité visuelle, etc.
-                    </p>
+                        <span class="formationResBGTxt">La filière Systèmes et Réseaux Informatiques</span> vise à former des 
+                        ingénieurs capables de concevoir les architectures des systèmes d’information d’entreprises. </p>
+
+
                     <p>
-                        <span class="formationResBGTxt">Le designer graphique</span> doit par conséquent savoir faire preuve d’adaptation et d’une grande créativité.
+                        Elle propose une approche cohérente des réseaux, des
+                        systèmes et des applications réparties de manière à
+                        préparer l’ingénieur à la conduite de projets dans le
+                        domaine des infrastructures informatiques.
                     </p>
                 </div>
                 <div class="btnDownload" id="slider-formation" style="height:200px; bottom:-140px;">
