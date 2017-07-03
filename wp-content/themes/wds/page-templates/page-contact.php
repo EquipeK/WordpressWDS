@@ -290,4 +290,6 @@
 
 
 
-<?php get_footer(); ?>
+<?php 
+include('wp-content\themes\wds\inc\contact_form.php');
+get_footer(); ?>

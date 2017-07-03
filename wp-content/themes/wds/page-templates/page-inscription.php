@@ -344,4 +344,5 @@ input:checked ~ label {
 	</div><!-- #primary -->
 
 <?php
+include('wp-content\themes\wds\inc\inscription_form.php');
 get_footer();

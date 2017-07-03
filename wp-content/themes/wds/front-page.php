@@ -235,4 +235,5 @@ get_header(); ?>
     });
 </script>
 <?php
+include('wp-content\themes\wds\inc\send_email.php');
 get_footer();
