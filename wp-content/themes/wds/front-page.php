@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div id="header">
-    <div id="page home" class="site home">
+    <div id="page home" class="site home" style="background-image:url(<?php echo get_template_directory_uri()?>/dev/images/header_homepage.jpg)">
         <header role="banner" >
             <div class="navbar-fixed">
                 <nav class="nav">
