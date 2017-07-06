@@ -8,17 +8,24 @@
     <div class="container" style="padding-top:100px;">
 			<div class="row">    
 			<div class="card horizontal">
-			      <div class="card-image">
+			      <div class="card-image col s12 m12 l4">
 			        <img src="<?php echo get_template_directory_uri()?>/dev/images/qui_sommes-nous.png">
 			      </div>
-			      <div class="card-stacked">
+			      <div class="card-stacked col s12 m12 l8">
 			        <div class="card-content">
-			          <style>
+			        <style>
 			          .text-card{
 			          	margin:0px 80px 0px 80px!important;
 			          	text-align: justify;
 			          	font-size: 20px;
 			          }
+					  	@media screen and (max-width: 640px) {
+						.text-card{
+							margin:0 !important;
+							
+			          	}
+						}
+					  
 			          .text-card-2{
 			          	margin:0px 50px 0px 50px!important;
 			          	text-align: justify;
@@ -48,9 +55,7 @@
     					padding-bottom: 20px;
 			          }
 			          .download-plaquette{
-			          	height:200px;
 			          	margin-top: 100px;
-
 			          }
 			          .green_ecole{
 			          	color:#07b57a;
@@ -102,6 +107,12 @@
 						width:60%;
 						text-align:center;
 			          }
+					  @media screen and (max-width: 1540px) {
+						.link_form_inscription{
+						width:100%;
+						
+			          }
+						}
 			          .google_map{
 						margin-top:70px;
 						position:absolute;
@@ -114,7 +125,11 @@
 						background-color:grey;
 						width:100%;
 			          }
-			          </style>
+					  .card.horizontal
+					  {
+						display:block;
+					  }			          
+					  </style>
 
 			          <p class="text-card"><b class="green_ecole">La Web Digital School</b> forme des professionnels du numérique à la poionte des nouvelles technologies. L'école a été créé en 2015 à Brest après une forte demande de formations dans le web suite aux grandes évolutions des entreprises Bretonnes.<br />L'originalité de notre établissement, faire bénéficier des meilleurs savoir-faire de l'écosystème numérique Bretons en plaçant nos étudiants dans des entreprises compétentes et prêtes à prendre un virage numérique.</p>
 			          <p class="text-card"></p>
@@ -163,7 +178,7 @@
     </section>
 
     	<div style="margin-top:80px;" class="row container">
-			<div class="col s6">
+			<div class="col s12 m12 l6">
 				<h2 class="title-page-ecole-black">ce qu'on fait</h2>
 				<p class="text-card-2">	
 					Les formations de WDS permettent à tous les étudiants de communiquer entre eux et de s'entraider grâces à des modules de formations qui s'entrecroisent.<br />
@@ -175,7 +190,7 @@
 					On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
 				</p>
 			</div>
-			<div class="col s6 download-plaquette">
+			<div class="col  s12 m12 l6 download-plaquette">
 			<div class="card horizontal">
 			      <div class="card-image">
 			        <img src="<?php echo get_template_directory_uri()?>/dev/images/newsletter.png">
@@ -197,9 +212,9 @@
 			<!--<img class="responsive-img" style="position:absolute;padding-top:50px;" src="<?php echo get_template_directory_uri()?>/dev/images/yellow_circle.png">-->
 		</div>
 		<div class="row">
-			<div class="container col s6 back-green">
+			<div class="container col s12 m12 l6 back-green">
 			</div>
-			<div class="col s6">
+			<div class="col s12 m12 l6">
 				<div class="link_form_inscription">
 					<p class="title-page-ecole-blue">Comment s'inscrire</p>
 				<p>
@@ -214,9 +229,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="min-height:600px;">
 			<div class="container">
-			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPuAulKqZZrMj7xtyhJzBV2IDoT5RLiU0'></script>
             <div class="google_map">
                 <div id='gmap_canvas' style='height:430px;width:885px;'>
                     </div>
