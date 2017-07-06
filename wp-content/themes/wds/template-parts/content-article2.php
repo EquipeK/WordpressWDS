@@ -14,8 +14,7 @@ if($i == 1)
 	<a href="<?php echo get_permalink(); ?>">
 	<div id="article-2" class="col s12" style="max-height:250px;background-color:#efd502; padding:0;">
 		<article style="color:white;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<img class="object-fit_cover article_petit" src="<?php echo get_template_directory_uri()?>/dev/images/actu_paddle.png" alt="" height="250px">
-
+			<?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'object-fit_cover article_petit') );?>
 			<div class="entry-content resume_article">
 				<?php
 					the_excerpt()
@@ -38,8 +37,7 @@ if($i == 1)
 	<a href="<?php echo get_permalink(); ?>">
 	<div id="article-3" class="col s12" style="max-height:250px; background-color:#07b57a; padding:0;">
 		<article style="color:white;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<img class="object-fit_cover article_petit" src="<?php echo get_template_directory_uri()?>/dev/images/actu_paddle.png" alt="" height="250px">
-
+			<?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'object-fit_cover article_petit') );?>
 			<div id="resume_article_bot" class="entry-content resume_article">
 				<?php
 					the_excerpt()

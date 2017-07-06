@@ -10,8 +10,8 @@
 ?>
 	<a href="<?php echo get_permalink(); ?>">
 	<article style="color:white; margin:0;" id="actu-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<img id="article_gros" class="object-fit_cover" src="<?php echo get_template_directory_uri()?>/dev/images/actu_paddle.png" alt="">
-
+		
+		<?php echo get_the_post_thumbnail( $post_id, 'post_thumbnail', array( 'class' => 'object-fit_cover', 'id' => 'article_gros') );?>
 		<div id="resume_article_gros" class="entry-content resume_article">
 		
 			<?php
