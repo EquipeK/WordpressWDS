@@ -18,18 +18,26 @@
 								<p>Web Digital School est une école supérieur privée en informatique plébiscité par la qualité de son enseignement en alternance, en initial ou en continue </p>
 							</div>
 						</article>
-						<div class="row">
+						<div class="row" style="padding-top:150px";>
 							<div class="col s12 m6 l3 ">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-market">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/marketing_bulle.png" alt="">
+							</a>
 							</div>
 							<div class="col s12 m6 l3 ">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-design">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/design_bulle.png" alt="">
+							</a>
 							</div>
 							<div class="col s12 m6 l3 ">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-developpement">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/dev_bulle.png" alt="">
+							</a>
 							</div>
 							<div class="col s12 m6 l3 ">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-systeme-et-reseau">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/reseau_bulle.png" alt="">
+							</a>
 							</div>
 						</div>
 						<article class="center-block" style="width:70%;">
