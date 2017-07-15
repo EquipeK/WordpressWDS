@@ -173,3 +173,62 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 15;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+function contact_send_message() {
+
+    $contact_errors = false;
+
+    // get the posted data
+    $name = $_POST["nom"];
+    $email_address = $_POST["email"];
+    $phone_num = $_POST["phone"];
+    $message = $_POST["message"];
+
+    // write the email content
+    $header .= "MIME-Version: 1.0\n";
+    $header .= "Content-Type: text/html; charset=utf-8\n";
+    $header .= "From:" . $email_address;
+
+    $message = "Name: $name\n";
+    $message .= "Email Address: $email_address\n";
+    $message .= "Telefon: $contact_phone\n";
+    $message .= "Message:\n$message";
+
+    $subject = "Memes";
+    $subject = "=?utf-8?B?" . base64_encode($subject) . "?=";
+
+    $to = "gwendal.jeanson@gmail.com";
+
+    // send the email using wp_mail()
+    if( !wp_mail($to, $subject, $message, $header) ) {
+        $contact_errors = true;
+    }
+
+}
+add_action('contact_send_message', 'contact_send_message');
+
+function send_plaquette() {
+
+    $contact_errors = false;
+
+    // get the posted data
+    $email_address = $_POST["email_newsletter"];
+
+    // write the email content
+    $header .= "MIME-Version: 1.0\n";
+    $header .= "Content-Type: text/html; charset=utf-8\n";
+
+    $message .= "Voici la plaquette des formations de la WDS !";
+
+    $subject = "Plaquette WDS";
+    $subject = "=?utf-8?B?" . base64_encode($subject) . "?=";
+
+    $to = $email_address;
+
+    // send the email using wp_mail()
+    if( !wp_mail($to, $subject, $message, $header) ) {
+        $contact_errors = true;
+    }
+
+}
+add_action('send_plaquette', 'send_plaquette');

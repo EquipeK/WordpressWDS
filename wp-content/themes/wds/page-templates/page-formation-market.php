@@ -1,6 +1,25 @@
 <?php /* Template Name: FormationMarket */ ?>
 
-<?php get_header('custom'); ?>
+<?php 
+// check for form submission - if it doesn't exist then send back to contact form
+if ( isset($_POST["save"]) && $_POST["save"] == "plaquette" ) {
+    // Trigger action/function 'contact_send_message'
+    $mail = $_POST['email_newsletter']; //get input text
+    global $wpdb;
+    $table_name = $wpdb->prefix . "inscrits_newsletter";
+    if($wpdb->insert( $table_name, array( 'mail' => $mail) ))
+    {
+        $message = "Success!";
+    }else
+    {
+        $message = "Fail!";
+    }
+    
+    do_action( 'send_plaquette' );
+}
+
+global $contact_errors;
+get_header('custom'); ?>
     <div id="bandeau-MD" class="bandeau"  style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
 		
 	</div>
@@ -48,6 +67,7 @@
                     <div id="sliding" style="display:none; padding-top:20px">
                     <form id="form_contact" style="width:100%;">
                         <input type="email" name="email_newsletter" value="" placeholder="adresse email">
+                        <input type="hidden" name="save" value="plaquette">
                         <input type="submit" name="" value="Recevoir">
                         </form>
                     </div>

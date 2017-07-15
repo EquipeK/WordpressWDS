@@ -7,6 +7,24 @@
  * @package WDS
  */
 
+// check for form submission - if it doesn't exist then send back to contact form
+if ( isset($_POST["save"]) && $_POST["save"] == "plaquette" ) {
+    // Trigger action/function 'contact_send_message'
+    $mail = $_POST['email_newsletter']; //get input text
+    global $wpdb;
+    $table_name = $wpdb->prefix . "inscrits_newsletter";
+    if($wpdb->insert( $table_name, array( 'mail' => $mail) ))
+    {
+        $message = "Success!";
+    }else
+    {
+        $message = "Fail!";
+    }
+    
+    do_action( 'send_plaquette' );
+}
+
+global $contact_errors;
 get_header(); ?>
 
 <div id="header">
@@ -171,22 +189,22 @@ get_header(); ?>
             <div id="other-block" class="col s12 m5 push-m1">
                 <div id="other-block-text">
                     <div>
-                        <h5>test</h5>
+                        
                     </div>
                     <div>
-                        <h5>test</h5>
+                       
                     </div>
                     <div>
-                        <h5>test</h5>
+                       
                     </div>
                     <div>
-                        <h5>test</h5>
+                       
                     </div>
                     <div>
-                        <h5>test</h5>
+                        
                     </div>
                     <div>
-                        <h5>test</h5>
+                        
                     </div>
                 </div>   
             </div>
@@ -209,8 +227,9 @@ get_header(); ?>
             <div class="item_contact">
                 <h5>NEWSLETTER</h5>
                 <p>Je m’inscris gratuitement <br> pour ne manquer aucune actualités</p>
-                <form id="form_contact">
-                    <input type="email" name="email_newsletter" value="" placeholder="adresse email">
+                <form id="form_contact" method="POST" action="">
+                    <input type="email" name="email_newsletter" value="" placeholder="adresse email" required>
+                    <input type="hidden" name="save" value="plaquette">
                     <input type="submit" name="" value="Je m'abonne">
                 </form>
             </div>
@@ -218,6 +237,8 @@ get_header(); ?>
         <img src="<?php echo get_template_directory_uri()?>/dev/images/barreJV2.png" style="position:absolute; left:0;z-index:-1;max-height:500px;"alt="">       
         </div>
     </div>
+   
+ 
 <script>
     (function(){
 		$(window).scroll(function(){
@@ -235,5 +256,4 @@ get_header(); ?>
     });
 </script>
 <?php
-include('wp-content\themes\wds\inc\send_email.php');
 get_footer();
