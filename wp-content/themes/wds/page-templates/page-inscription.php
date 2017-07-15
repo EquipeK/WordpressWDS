@@ -1,8 +1,16 @@
 <?php /* Template Name: inscription */ ?>
 
 
-<?php get_header('custom'); ?>
+<?php 
+// check for form submission - if it doesn't exist then send back to contact form
+if ( isset($_POST["save"]) && $_POST["save"] == "inscription" ) {
+    // Trigger action/function 'contact_send_message'
+    do_action( 'inscription_ecole' );
+}
 
+global $contact_errors;
+get_header('custom'); ?>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <style>
 
 
@@ -188,7 +196,19 @@ input:checked ~ label {
 }
 
 </style>
-
+<?php
+if(isset($_GET['captcha']))
+{
+  if ($_GET['captcha'] = 'captcha') 
+  {
+    ?>
+    <script type="text/javascript">          
+      alert("Mauvais captcha Google"); 
+      </script>
+      <?php
+  }
+}
+?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
         <div id="bandeau-contact" class="bandeau" style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
@@ -206,16 +226,16 @@ input:checked ~ label {
             <div class="pagenation page-05"></div>
           </div>
           <div class="blocks">
-          <form>
+          <form class="main"  method="POST" action="">
             <div class="block block-01 is-active">
               <fieldset>
                 <legend>Vos Infos</legend>
                 <div>
-                  <input id="name" name="name" type="text" />
+                  <input id="name" name="name_contact" type="text" />
                   <label for="name">Nom</label>
                 </div>
                 <div>
-                  <input id="prenom" name="prenom" type="text" />
+                  <input id="prenom" name="lastname_contact" type="text" />
                   <label for="prenom">Prénom</label>
                 </div>
 
@@ -225,12 +245,12 @@ input:checked ~ label {
                 </div>
 
                 <div>
-                  <input id="tel" name="tel" type="tel" />
+                  <input id="tel" name="phone_contact" type="tel" />
                   <label for="tel">Téléphone</label>
                 </div>
 
                 <div>
-                  <input id="email" name="email" type="email" />
+                  <input id="email" name="email_contact" type="email" />
                   <label for="email">Email</label>
                 </div>
                 
@@ -253,19 +273,19 @@ input:checked ~ label {
                 <fieldset>
                   <legend>Dernière formation</legend>
                   <div>
-                    <input type="number" name="year" value="" id="year">
+                    <input type="number" name="candidatureFormationAnnee" value="" id="year">
                     <label for="year">Année</label>
                   </div>
                   <div>
-                    <input type="text" name="etablissement" value="" id="etablissement">
+                    <input type="text" name="etablissementFormation" value="" id="etablissement">
                     <label for="etablissement">Etablissement</label>
                   </div>
                   <div>
-                    <input type="text" name="formation" value="" id="formation">
+                    <input type="text" name="titreFormation" value="" id="formation">
                     <label for="formation">Formation</label>
                   </div>
                   <div>
-                    <input id="obtention" name="obtention" type="checkbox" />
+                    <input id="obtention" name="obtentionFormation" type="checkbox" value="oui"/>
                     <label for="obtention">Obtention</label>
                   </div>
                   <div class="btn waves-effect waves-light btn-contact button page-03">Suivant</div>
@@ -275,23 +295,23 @@ input:checked ~ label {
               <fieldset>
                   <legend>Dernière expérience</legend>
                   <div>
-                    <input type="text" name="statut" value="" id="statut">
+                    <input type="text" name="candidatureExpStatut" value="" id="statut">
                     <label for="statut">Statut</label>
                   </div>
                   <div>
-                    <input id="experienceDate" name="experienceDate" type="date" />
+                    <input id="experienceDate" name="candidatureExpDate" type="date" />
                     <label for="experienceDate">Date Début</label>
                   </div>
                   <div>
-                    <input type="text" name="entreprise" value="" id="entreprise">
+                    <input type="text" name="candidatureExpEntreprise" value="" id="entreprise">
                     <label for="entreprise">Entreprise</label>
                   </div>
                   <div>
-                    <input type="text" name="poste" value="" id="poste">
+                    <input type="text" name="candidatureExpPoste" value="" id="poste">
                     <label for="poste">Poste</label>
                   </div>
                   <div>
-                    <input type="number" name="experienceDuree" value="" id="experienceDuree">
+                    <input type="number" name="candidatureExpDuree" value="" id="experienceDuree">
                     <label for="experienceDuree">Durée (en semaines)</label>
                   </div>
                   <div class="btn waves-effect waves-light btn-contact button page-04">Suivant</div>
@@ -301,24 +321,24 @@ input:checked ~ label {
             <fieldset>
               <legend>Comment avez-vous connu la WDS ?</legend>
                 <div>
-                  <input id="internet" name="internet" type="checkbox" />
+                  <input id="internet" value="Internet" name="checkboxInternet" type="checkbox" />
                   <label for="internet">Internet</label>
                 </div>
                 <div>
-                  <input id="Presse" name="Presse" type="checkbox" />
+                  <input id="Presse" value="Presse" name="checkboxPresse" type="checkbox" />
                   <label for="Presse">Presse</label>
                 </div>
                 <div>
-                  <input id="Connaissances" name="Connaissances" type="checkbox" />
+                  <input id="Connaissances" value="Connaissances" name="checkboxConnaissances" type="checkbox" />
                   <label for="Connaissances">Connaissances</label>
                 </div>
                 <div id="slider">
-                  <input id="Autre" name="Autre" type="checkbox" />
+                  <input id="Autre" name="candidatureDiversAutre" type="checkbox" />
                   <label for="Autre">Autre</label>
                 </div>
                 <div id="sliding" style="display:none;">
                   <label for="autreText">Par quel moyen ?</label>
-                  <input id="autreText" name="AutreText" type="text" />
+                  <input id="autreText" name="candidatureDiversAutre" type="text" />
                 </div>
                 <div class="btn waves-effect waves-light btn-contact button page-05">Suivant</div>
               </fieldset>
@@ -326,10 +346,8 @@ input:checked ~ label {
             <div class="block block-05">
               <fieldset>
                   <legend>Fin</legend>
-                  <div>
-                      Captcha
-                      Upload cv
-                    </div>
+                  <div class="g-recaptcha" data-sitekey="6Lc2MykUAAAAANVPmFGD1YRJSk-1DJPc1XUGVmRd"></div>
+                  <input type="hidden" name="save" value="inscription">
                   <input class="button" type="submit" name="submit" value="submit">                  
               </fieldset> 
             </div>
@@ -344,5 +362,4 @@ input:checked ~ label {
 	</div><!-- #primary -->
 
 <?php
-include('wp-content\themes\wds\inc\inscription_form.php');
 get_footer();

@@ -1,9 +1,19 @@
 <?php /* Template Name: contact */ ?>
 
-<?php get_header('custom'); ?>
+<?php 
+// check for form submission - if it doesn't exist then send back to contact form
+if ( isset($_POST["save"]) && $_POST["save"] == "contact" ) {
+    // Trigger action/function 'contact_send_message'
+    do_action( 'contact_send_message' );
+}
+
+global $contact_errors;
+get_header('custom'); ?>
+
     <div id="bandeau-contact" class="bandeau" style="border:solid 1px black; height:350px; width:100%;margin-top:50px">
 	</div>
     <div class="container" style="padding-top:150px">
+    
         <div class="row">
             <div class="col s12 m12">
             <div class="pagenations" style="display:none">
@@ -11,7 +21,7 @@
                 <div class="pagenation page-02"></div>
                 <div class="pagenation page-03"></div>
             </div>
-            <form class="main">
+            <form class="main"  method="POST" action="">
                 <!-- STEP 1 -->
                 <div class="block block-01 is-active">
                     <div class="card cardContact">
@@ -28,13 +38,13 @@
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <p>
-                                                <input name="group1" type="radio" id="market" />
+                                                <input name="group1" type="radio" id="market" value="Marketing Digital"/>
                                                 <label for="market">Bac +2 Marketing Digital</label>
                                             </p>
                                         </div>
                                         <div class="input-field col s6">
                                             <p>
-                                                <input name="group1" type="radio" id="design" />
+                                                <input name="group1" type="radio" id="design" value="Design Graphique" />
                                                 <label for="design">Mastère 1 Design Graphique</label>
                                             </p>
                                         </div>
@@ -42,13 +52,13 @@
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <p>
-                                                <input name="group1" type="radio" id="dev" />
+                                                <input name="group1" type="radio" id="dev" value="Développement" />
                                                 <label for="dev">Mastère 1 Développement</label>
                                             </p>
                                         </div>
                                         <div class="input-field col s6">
                                             <p>
-                                                <input name="group1" type="radio" id="res" />
+                                                <input name="group1" type="radio" id="res" value="Système & Réseau"/>
                                                 <label for="res">Mastère 1 Système & Réseau</label>
                                             </p>
                                         </div>
@@ -137,21 +147,21 @@
                             <div class="row">
                                     <div class="row">
                                         <div class="input-field col s6">
-                                             <input id="last_name" type="text" class="validate">
+                                            <input id="last_name" name="lastname_contact" type="text" class="validate" required>
                                             <label for="last_name">Nom</label>
                                         </div>
                                         <div class="input-field col s6">
-                                             <input id="first_name" type="text" class="validate">
+                                             <input id="first_name" name="name_contact" type="text" class="validate" required>
                                             <label for="first_name">Prénom</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s6">
-                                             <input id="phone" type="text" class="validate">
+                                             <input id="phone" name="phone_contact" type="text" class="validate" required>
                                             <label for="phone">Téléphone</label>
                                         </div>
                                         <div class="input-field col s6">
-                                             <input id="mail" type="text" class="validate">
+                                             <input id="mail" name="email_contact" type="text" class="validate" required>
                                             <label for="mail">Adresse mail</label>
                                         </div>
                                     </div>
@@ -224,11 +234,11 @@
                                 
                                     <div class="row">
                                        <div class="input-field col s12">
-                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <textarea id="textarea1" name="message_contact" class="materialize-textarea" required></textarea>
                                             <label for="textarea1">Message</label>
                                         </div>
                                     </div>
-
+                                    <input type="hidden" name="save" value="contact">
                                     <input class="button btn waves-effect waves-light btn-contact" type="submit" name="submit" value="submit">        
                                
                             </div>
@@ -291,5 +301,5 @@
 
 
 <?php 
-include('wp-content\themes\wds\inc\contact_form.php');
-get_footer(); ?>
+get_footer();
+?>
