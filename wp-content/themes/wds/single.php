@@ -7,7 +7,7 @@
  * @package WDS
  */
 
-get_header(); ?>
+get_header('custom'); ?>
 
 	<style>
 	.entry-meta a 
