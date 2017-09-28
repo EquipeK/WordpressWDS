@@ -50,6 +50,7 @@ h6
 				<div class="row">
                     <div class="col s12 m5">
                         <h6>LE RYTHME DE L'ALTERNANCE</h6>
+                        <p>
                         <?php 
                         $value = get_field( "alternance_premier_texte" );
                         if( $value ) {
@@ -57,10 +58,11 @@ h6
                         } else {
                             echo 'empty';
                         } ?>
-
+                        </p>
                     </div>
                     <div class="col s12 m5 push-m2" id="bloc-alternance">
                         <h6>LES AVANTAGES DE L'ALTERNANCE</h6>
+                        <p>
                         <?php 
                         $value = get_field( "alternance_deuxieme_texte" );
                         if( $value ) {
@@ -68,6 +70,7 @@ h6
                         } else {
                             echo 'empty';
                         } ?>
+                        </p>
                         </div>
                 <img class="images-side" src="<?php echo get_template_directory_uri()?>/dev/images/barreJV2.png" style="position:absolute; left:0; z-index:-1;" alt="">    
                 </div>
@@ -75,6 +78,7 @@ h6
                 <div class="row">
                     <div class="col s12 m5">
                         <h6>ET POUR L'ENTREPRISE ?</h6>
+                        <p>
                         <?php 
                         $value = get_field( "alternance_troisième_texte" );
                         if( $value ) {
@@ -82,6 +86,7 @@ h6
                         } else {
                             echo 'empty';
                         } ?>
+                        </p>
                     </div>
                     <div class="col s12 m5 push-m2">
                     <script>
