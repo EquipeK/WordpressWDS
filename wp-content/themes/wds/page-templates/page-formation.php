@@ -23,21 +23,25 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-market">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/marketing_bulle.png" alt="">
 							</a>
+							<p style="text-align:center;">Marketing Digital</p>
 							</div>
 							<div class="col s12 m6 l3 ">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-design">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/design_bulle.png" alt="">
 							</a>
+							<p style="text-align:center;">Design Graphique</p>
 							</div>
 							<div class="col s12 m6 l3 ">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-developpement">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/dev_bulle.png" alt="">
 							</a>
+							<p style="text-align:center;">Développement</p>
 							</div>
 							<div class="col s12 m6 l3 ">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>formation-systeme-et-reseau">
 								<img class="bulle" src="<?php echo get_template_directory_uri()?>/dev/images/reseau_bulle.png" alt="">
 							</a>
+							<p style="text-align:center;">Système & Réseaux</p>
 							</div>
 						</div>
 						<article class="center-block" style="width:70%;">
@@ -46,8 +50,10 @@
 							</div>
 						</article>
 						<img src="<?php echo get_template_directory_uri()?>/dev/images/barreJV2right.png" style="position:absolute; right:0; z-index:-1;"alt="">
-						<img class="center-block" src="<?php echo get_template_directory_uri()?>/dev/images/statutformation.jpeg" alt="" style="width:70% !important">
-
+						
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>alternance">
+							<img class="center-block" src="<?php echo get_template_directory_uri()?>/dev/images/statutformation.jpeg" alt="" style="width:70% !important">
+						</a>
 						 <div id="front_entreprises" style="margin-top:10%;margin-bottom:5%">
 							<div class="row">
 							<div id="purple-block" class="col s12 m4 push-m1" style="background-color: #353533 !important">

@@ -66,8 +66,8 @@ get_header('custom'); ?>
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <p>
-                                                <input name="group1" type="radio" id="other" />
-                                                <label for="other">Autres</label>
+                                                <input name="group1" type="radio" id="other" value="IT Manager"/>
+                                                <label for="other">IT Manager</label>
                                             </p>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ get_header('custom'); ?>
                                     <img style="display: none;" src="<?php echo get_template_directory_uri()?>/dev/images/phone_black.png" alt="Phone" class="responsive-img">
                                 </div>
                                 <div class="coordInfo right">
-                                    <p>02 00 00 00 13</p>
+                                    <p>02 57 52 04 31</p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -199,7 +199,7 @@ get_header('custom'); ?>
                                     <img style="display: none;" src="<?php echo get_template_directory_uri()?>/dev/images/phone_black.png" alt="Phone" class="responsive-img">
                                 </div>
                                 <div class="coordInfo right">
-                                    <p>02 00 00 00 13</p>
+                                    <p>02 57 52 04 31</p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -239,7 +239,7 @@ get_header('custom'); ?>
                                         </div>
                                     </div>
                                     <input type="hidden" name="save" value="contact">
-                                    <input class="button btn waves-effect waves-light btn-contact" type="submit" name="submit" value="submit">        
+                                    <input class="button btn waves-effect waves-light btn-contact" type="submit" name="submit" value="Envoyer">        
                                
                             </div>
 
@@ -273,7 +273,7 @@ get_header('custom'); ?>
                                     <img style="display: none;" src="<?php echo get_template_directory_uri()?>/dev/images/phone_black.png" alt="Phone" class="responsive-img">
                                 </div>
                                 <div class="coordInfo right">
-                                    <p>02 00 00 00 13</p>
+                                    <p>02 57 52 04 31</p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>

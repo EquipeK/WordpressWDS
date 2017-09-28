@@ -47,7 +47,8 @@
 						<a href="#">Mentions Légales</a>
 					</div>
 					<div class='footer-item'>
-						<a href="#">Plan du site</a>
+					brest@ecolewds.fr </br>
+					02 57 52 04 31
 					</div>	
 				</div>
 			</div><!-- .site-info -->

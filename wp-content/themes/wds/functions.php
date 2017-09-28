@@ -249,7 +249,7 @@ function inscription_ecole() {
 		if (empty($code)) {
 			return false; // Si aucun code n'est entré, on ne cherche pas plus loin
 		}
-		$params = array('secret'=>'6Lc2MykUAAAAADeTjSPVLw-fyiJmkDyweXYzFq_G','response' => $code);
+		$params = array('secret'=>'6LcfzBAUAAAAAORAB_Y0CXh2mBZ4wPQZt_C9Ih6x','response' => $code);
 		$url = "https://www.google.com/recaptcha/api/siteverify?" . http_build_query($params);
 		if (function_exists('curl_version')) {
 			$curl = curl_init($url);

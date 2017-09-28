@@ -105,6 +105,7 @@ input:checked ~ label {
 }
 
 .block {
+  min-height: 500px;
   background: transparent;
   position: absolute;
   transform: translateX(0);
@@ -256,7 +257,7 @@ if(isset($_GET['captcha']))
                 
                 <div>
                     <select id="select-formation" name="select-formation">
-                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" disabled selected>Choisissez votre formation</option>
                         <option value="Bac +2 : Chargé Marketing Digital (Bac+2 en 1 an)">Bac +2 : Chargé Marketing Digital (Bac+2 en 1 an)</option>
                         <option value="Mastere Systeme Reseau (Bac+3/4 en 2 ans)">Mastère Système & Réseau (Bac+3/4 en 2 ans)</option>
                         <option value="Mastere Design Graphique (Bac+3/4 en 2 ans)">Mastère Design Graphique (Bac+3/4 en 2 ans)</option>
@@ -293,7 +294,7 @@ if(isset($_GET['captcha']))
             </div>
             <div class="block block-03">
               <fieldset>
-                  <legend>Dernière expérience</legend>
+                  <legend>Dernière expérience professionnelle</legend>
                   <div>
                     <input type="text" name="candidatureExpStatut" value="" id="statut">
                     <label for="statut">Statut</label>
@@ -312,7 +313,7 @@ if(isset($_GET['captcha']))
                   </div>
                   <div>
                     <input type="number" name="candidatureExpDuree" value="" id="experienceDuree">
-                    <label for="experienceDuree">Durée (en semaines)</label>
+                    <label for="experienceDuree">Durée (en mois)</label>
                   </div>
                   <div class="btn waves-effect waves-light btn-contact button page-04">Suivant</div>
               </fieldset> 
@@ -346,9 +347,9 @@ if(isset($_GET['captcha']))
             <div class="block block-05">
               <fieldset>
                   <legend>Fin</legend>
-                  <div class="g-recaptcha" data-sitekey="6Lc2MykUAAAAANVPmFGD1YRJSk-1DJPc1XUGVmRd"></div>
+                  <div class="g-recaptcha" data-sitekey="6LcfzBAUAAAAADDxcsuf16q5gbdqZrHIryH17oh8"></div>
                   <input type="hidden" name="save" value="inscription">
-                  <input class="button" type="submit" name="submit" value="submit">                  
+                  <input class="button" type="submit" name="submit" value="Envoyer">                  
               </fieldset> 
             </div>
           </form>

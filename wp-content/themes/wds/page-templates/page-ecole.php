@@ -131,7 +131,7 @@
 					  }			          
 					  </style>
 
-			          <p class="text-card"><b class="green_ecole">La Web Digital School</b> forme des professionnels du numérique à la poionte des nouvelles technologies. L'école a été créé en 2015 à Brest après une forte demande de formations dans le web suite aux grandes évolutions des entreprises Bretonnes.<br />L'originalité de notre établissement, faire bénéficier des meilleurs savoir-faire de l'écosystème numérique Bretons en plaçant nos étudiants dans des entreprises compétentes et prêtes à prendre un virage numérique.</p>
+			          <p class="text-card"><b class="green_ecole">La Web Digital School</b> forme des professionnels du numérique à la pointe des nouvelles technologies. L'école a été créé en 2015 à Brest après une forte demande de formations dans le web suite aux grandes évolutions des entreprises Bretonnes.<br />L'originalité de notre établissement, faire bénéficier des meilleurs savoir-faire de l'écosystème numérique Bretons en plaçant nos étudiants dans des entreprises compétentes et prêtes à prendre un virage numérique.</p>
 			          <p class="text-card"></p>
                       <p class="text-card">Partenaire des écoles IPSSI à Paris et CARREL à Lyon, nous vous apportons un enseignement de qualité et privilégions des classes de 15 étudiants maximum afin d'optimiser l'apprentissage de tous.</p>
 			        </div>
@@ -224,7 +224,7 @@
 					<br /><br />
 					Suite à un entretien personnalisé et un test d'admission, nous vous contacterons afin de vous donner une réponse définitive.
 				</p>
-				<a href="#" class="btn_inscription">Je m'inscris</a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>inscriptions" class="btn_inscription">Je m'inscris</a>
 
 				</div>
 			</div>
