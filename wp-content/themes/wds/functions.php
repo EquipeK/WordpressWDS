@@ -414,7 +414,7 @@ function inscription_ecole() {
 
 		$pdf-> Output(WP_CONTENT_DIR . '/uploads/'.$message.'.pdf', 'F');
 		$attachments = array( WP_CONTENT_DIR . '/uploads/'.$message.'.pdf' );
-		$to = "gwendal.jeanson@gmail.com";
+		$to = "brest@ecolewds.fr";
 
 		// Below the subject of the email
 		$e_subject = 'Vous avez été contacté par ' . $name_contact . ' ' . $lastname_contact. '.';
